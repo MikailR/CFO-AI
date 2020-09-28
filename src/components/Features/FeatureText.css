@@ -1,0 +1,25 @@
+#feature-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.demo-button {
+    margin-top: 20px;
+  
+    align-self: flex-start;
+    background-color: #00A1E4;
+    color: #fff;
+    /* color: black; */
+    border-radius: 30px;
+  
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15pt;
+  
+    padding: 10px 30px;
+  }
+  
+  .demo-button:hover {
+    text-decoration: none;
+  }

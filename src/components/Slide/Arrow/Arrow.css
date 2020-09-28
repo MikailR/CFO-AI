@@ -1,0 +1,13 @@
+.arrow-container {
+    font-size: 30pt;
+    height: 35px;
+    width: 35px;
+}
+
+.arrow-container:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    height: 100%;
+}
