@@ -1,45 +1,58 @@
-:root {
-  --contact-btn-padding: 25px;
-}
-
 .nav {
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
 
-  padding: 15px;
+  padding: 0 100px;
 
   z-index: 9999;
 
   width: 100%;
   background-color: rgba(0, 9, 80, 0.5);
+
+  transition: all 0.3s ease;
 }
 
-@media only screen and (min-width: 992px) {
-  .nav {
-    padding: 0 100px;
-  }
+.scrolled {
+    background-color: #000950 !important;
+    box-shadow: 0 3px 10px #000950;
+    transition: all 0.3s ease;
 }
 
 .logo {
   height: 35pt;
 }
 
-.logo-link,
-.home-link,
-.contact-link {
+.navbar-link {
+  margin: 10px 15px;
+}
+
+.logo-link {
+  margin-right: auto;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu-item {
   color: white;
   font-size: 16pt;
   font-weight: 500;
-  margin: 15px 15px;
 }
 
-@media only screen and (max-width: 992px) {
-  .home-link,
-  .contact-link {
-    display: none;
-  }
+.navbar-menu-item:hover {
+  text-decoration: none;
+  color: #fff34b;
+  transition: all 0.2 ease-out;
 }
 
 .contact-link {
@@ -48,31 +61,56 @@
   border-radius: 100px;
 }
 
-.home-link:hover,
-.contact-link:hover {
-  text-decoration: none;
-  color: #fff34b;
-}
+.hamburger-icon {
+  display: none;
 
-.logo-link {
-  margin-right: auto;
-}
-
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hamburger-link {
   color: white;
   font-size: 25pt;
   font-weight: 500;
-  margin: 15px 15px;
+  margin: 15px;
 }
 
-@media only screen and (min-width: 992px) {
-  .hamburger-link {
-    display: none;
+/* 
+    For Responsive NavBar
+    TODO: Make mobile first rather than desktop first
+*/
+@media only screen and (max-width: 992px) {
+  .nav {
+    background-color: transparent;
+    padding: 0 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+
+    position: absolute;
+    top: 100%;
+    left: -100%;
+
+    width: 100%;
+    background-color: #000950;
+
+    transition: all 0.2s ease;
+  }
+
+  .navbar-menu-item {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 0;
+      font-size: 18pt;
+  }
+
+  .contact-link {
+      margin-bottom: 20px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+
+    transition: all 0.2s ease;
+  }
+
+  .hamburger-icon {
+    display: block;
   }
 }

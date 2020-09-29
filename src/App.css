@@ -16,12 +16,11 @@
 @media only screen and (max-width: 992px) {
   .slider-background {
     height: auto;
-    background-position: right;
   }
 }
 
 .slider {
-  margin: 125px 15px
+  margin: 125px 15px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -43,8 +42,15 @@
 
 .explore-head {
   color: #313438;
-  padding: 40px;
+  padding-top: 40px;
   text-align: center;
+}
+
+.explore-separator {
+  border: solid 2px #00acff;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 80px;
 }
 
 .features {
@@ -52,13 +58,46 @@
   margin: 0 100px;
 }
 
+@media only screen and (max-width: 992px) {
+  .features {
+    margin: 0 25px;
+  }
+}
+
 .footer {
-  height: 250px;
-  background-color: #f5f7f9;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #000950;
+}
+
+.footer .register-button {
+  margin: auto;
+}
+
+#footer-pattern {
+  margin: auto;
+  width: 100%;
+}
+
+#footer-pattern path {
+  width: 100%;
+  fill: #000950;
+}
+
+.footer h1,
+.footer p {
+  color: white;
 }
 
 .footer p {
   font-size: 20pt;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer p {
+    font-size: 18pt;
+  }
 }
 
 .form-container {
@@ -71,6 +110,8 @@
   border: none;
   height: 100%;
   padding: 0 10px;
+
+  flex: 9;
 }
 :focus {
   outline: none;
@@ -80,9 +121,6 @@
   border: none;
   height: 100%;
   background-color: #ffd700;
-}
 
-.testing {
-  height: 100px;
-  background-color: #555;
+  flex: 2;
 }

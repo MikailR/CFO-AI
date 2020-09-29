@@ -5,7 +5,7 @@ function Slide(props) {
   return (
     <div className="container-fluid slide">
       <div className="row">
-        <div id="slide-text" className="col-sm-12 col-lg">
+        <div id="slide-text" className="col-md-12 col-lg">
           <h1 className="header">{props.text.headline}</h1>
           <p className="paragraph-normal">{props.text.paragraph1}</p>
 
@@ -18,7 +18,7 @@ function Slide(props) {
 
         <div
           id="slide-image"
-          className="col-sm-12 col-lg-auto flex-center-column"
+          className="col-md-12 col-lg-auto flex-center-column"
         >
           <img src={props.image} className="slide-image" />
         </div>

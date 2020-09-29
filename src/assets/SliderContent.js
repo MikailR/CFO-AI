@@ -1,7 +1,7 @@
-import robotInterface from "./robot-interface.png";
-import robotWaiter from "./robot-waiter.png";
-import robotSupplier from "./robot-supplier.png";
-import svgTest from "./robot-waiter.svg";
+import robotInterface from "./robot-interface 2.png";
+import robotWaiter from "./robot-waiter 3.png";
+import robotSupplier from "./robot-inventory.png";
+// import svgTest from "./robot-waiter.svg";
 
 const SliderContent = [
   {
@@ -26,7 +26,7 @@ const SliderContent = [
         "Staff optimizations allow employees to focus on being hospitality providers rather than order takers while the robots take care of the robotic stuff",
       button: "Pre-Register",
     },
-    image: svgTest,
+    image: robotWaiter,
   },
   {
     id: 2,

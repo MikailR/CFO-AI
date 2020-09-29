@@ -5,7 +5,7 @@
 }
 
 .demo-button {
-    margin-top: 20px;
+    margin-top: 10px;
   
     align-self: flex-start;
     background-color: #00A1E4;
@@ -22,4 +22,12 @@
   
   .demo-button:hover {
     text-decoration: none;
+    color: #fff34b;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .demo-button {
+      margin: auto;
+      margin-top: 20px;
+    }
   }

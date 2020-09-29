@@ -1,3 +1,22 @@
 .feature {
-    margin-bottom: 40px;
+  margin-bottom: 100px;
+}
+
+.feature-separator {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .feature {
+    margin-bottom: 50px;
+  }
+
+  .feature-separator {
+    display: block;
+    border-top: 2px solid;
+    border-image: radial-gradient(circle at 50%, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0) 30%);
+    border-image-slice: 60% 30%;
+    width: 100%;
+    margin: 50px auto;
+  }
 }

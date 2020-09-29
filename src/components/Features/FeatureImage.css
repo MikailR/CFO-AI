@@ -1,7 +1,25 @@
 #feature-image {
-    height: 60vh;
+    height: 50vh;
 }
 
 .feature-image {
     height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .feature-image {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #feature-image {
+        height: auto;
+    }
+
+    .feature-image {
+        margin-bottom: 25px;
+        height: auto;
+        width: 100%;
+    }
 }

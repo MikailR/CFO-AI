@@ -1,8 +1,13 @@
+import robotCFO from "./robot-cfo.png"
 import robotInterface from "./robot-interface.png"
+import bankruptcyProtection from "./bankruptcy-protection.png"
+import wasteManagement from "./waste-management.png"
+import optimization from "./optimization 2.png"
 
 const FeatureContent = [
   {
     reverse: true,
+    isLast: false,
     text: {
       headline: "CFO AI",
       paragraph1:
@@ -11,11 +16,12 @@ const FeatureContent = [
         "You don't have to be a financial expert to see your restaurant thrive. Spend your time on what matters most: your restaurant and its customers.",
       button: "View Demo",
     },
-    image: robotInterface,
+    image: robotCFO,
   },
   {
+    reverse: false,
+    isLast: false,
     text: {
-      reverse: false,
       headline: "Bankruptcy Protection",
       paragraph1:
         "Protect your restaurant from bankruptcy with micro-financing options to breathe in times of need. CFO AI contributes a percentage of your profits to our Community Fund so that your loans can have a much higher principal than your total contributions.",
@@ -23,10 +29,11 @@ const FeatureContent = [
         "And of course, if you decide to pull out of the fund, every cent can easily be retrieved.",
       button: "View Demo",
     },
-    image: robotInterface,
+    image: bankruptcyProtection,
   },
   {
     reverse: true,
+    isLast: false,
     text: {
       headline: "Waste Management",
       paragraph1:
@@ -35,11 +42,12 @@ const FeatureContent = [
         "Save the planet while also boosting your restaurant's profits by reducing food wastage. ",
       button: "View Demo",
     },
-    image: robotInterface,
+    image: wasteManagement,
   },
   {
+    reverse: false,
+    isLast: true,
     text: {
-      reverse: false,
       headline: "Staff and Menu Optimization",
       paragraph1:
         "Getting the most out of your restaurant staff involves making difficult decisions. Give your mind a rest since CFO AI has all the data required to make these decisions for you. With its POS integration, CFO AI can advise you on staff deployment in accordance with peak and off-peak hours.  In addition, the AI can also use the POS data to determine the performance of different menu items and then provide appropriate menu recommendations. ",
@@ -47,7 +55,7 @@ const FeatureContent = [
         "Make the best use of your resources without all the thinking. ",
       button: "View Demo",
     },
-    image: robotInterface,
+    image: optimization,
   },
 ];
 
