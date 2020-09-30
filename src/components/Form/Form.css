@@ -1,0 +1,131 @@
+.mask {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    position: relative;
+    padding: 50px;
+    height: auto;
+
+    background-color: #fff;
+    color: #313438;
+
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+
+    border: none;
+    outline: none;
+
+    background-color: #00acff;
+    color: #313438;
+    color: #fff;
+    font-size: 24pt;
+    border-radius: 100px;
+
+    width: 35px;
+    height: 35px;
+}
+
+.close-button:focus {
+    outline: none;
+}
+
+.form-logo {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.form-header {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.form-paragraph {
+    margin-bottom: 20px;
+    font-size: 16pt;
+}
+
+.name-container, .contact-info-container {
+    width: 100%;
+    text-align: left;
+}
+
+.email-container, .phone-container {
+    width: 48%;
+    text-align: left;
+}
+
+.name-container, .contact-info-container, .submit-input {
+    margin: 15px;
+}
+
+.contact-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-label, .email-label, .phone-label {
+    display: block;
+    margin: 0;
+
+    font-size: 15pt;
+    font-weight: 400;
+}
+
+.name-input, .email-input, .phone-input {
+    display: block;
+    width: 100%;
+    height: 35px;
+
+    padding: 5px;
+    border-radius: 0;
+    border:  solid 1px #313438;
+}
+
+.submit-input {
+    padding: 10px;
+    width: 100%;
+
+    background-color: #00acff;
+    color: #fff;
+    font-size: 15pt;
+    font-weight: 500;
+
+    border: none;
+}
+
+.submit-input:hover {
+    color: #fff34b;
+}
+
+@media only screen and (max-width: 992px) {
+    .form-paragraph {
+        font-size: 16pt;
+    }
+
+    .form-container {
+        width: 85%;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .contact-info-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .name-container, .email-container, .phone-container {
+        width: 100%;
+        margin: 10px;
+    }
+}

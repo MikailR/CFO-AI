@@ -55,7 +55,7 @@
 
 .register-button:hover {
   text-decoration: none;
-  /* background-color: #00ACFF; */
+  cursor: pointer;
   color: white;
 }
 

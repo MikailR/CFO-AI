@@ -113,7 +113,8 @@
 
   flex: 9;
 }
-:focus {
+
+.input-text:focus {
   outline: none;
 }
 

@@ -1,6 +1,10 @@
 import React from "react";
 import "./Slide.css";
 
+import Form from "../Form/Form.js";
+
+import Popup from "reactjs-popup";
+
 function Slide(props) {
   return (
     <div className="container-fluid slide">
@@ -11,10 +15,15 @@ function Slide(props) {
 
           <p className="paragraph-bold">{props.text.paragraph2}</p>
 
-          <a className="register-button" href="/">
-            {props.text.button}
-          </a>
+          <Popup
+            modal
+            trigger={<a className="register-button">{props.text.button}</a>}
+          >
+            {(close) => <Form close={close} />}
+          </Popup>
         </div>
+
+        {/* TODO: Add the Staff and Menu Optimizations slide to carousel */}
 
         <div
           id="slide-image"

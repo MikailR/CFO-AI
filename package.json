@@ -14,6 +14,7 @@
     "react-elastic-carousel": "^0.7.5",
     "react-scripts": "3.4.3",
     "react-slick": "^0.27.11",
+    "reactjs-popup": "^2.0.4",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.0"
   },

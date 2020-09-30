@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import logo from "./assets/logo.png";
+import logo from "./assets/logo-light.png";
 import SliderContent from "./assets/SliderContent.js";
 import FeatureContent from "./assets/FeatureContent.js";
 
@@ -9,10 +9,12 @@ import Navbar from "./components/Navbar/Navbar.js";
 import Slide from "./components/Slide/Slide.js";
 import Arrow from "./components/Slide/Arrow/Arrow.js";
 import Features from "./components/Features/Features.js";
+import Form from "./components/Form/Form.js";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Popup from "reactjs-popup";
 
 class App extends Component {
   state = {
@@ -20,6 +22,7 @@ class App extends Component {
     mounted: false,
     sliderContent: [],
     featureContent: [],
+    popupActive: false,
   };
 
   componentDidMount() {
@@ -42,9 +45,9 @@ class App extends Component {
     });
   };
 
-  hamburgerOnClick = () => {
+  setMask = () => {
     this.setState((prevState) => ({
-      isMobileActive: !prevState.isMobileActive,
+      popupActive: !prevState.popupActive,
     }));
   };
 
@@ -83,7 +86,7 @@ class App extends Component {
         <div className="slider-background">
           <Slider {...sliderSettings} className="slider">
             {this.state.sliderContent.map((slide) => {
-              return <Slide {...slide} key={slide.id} />;
+              return <Slide {...slide} key={slide.id} setMask={this.setMask} />;
             })}
           </Slider>
         </div>
@@ -110,27 +113,14 @@ class App extends Component {
 
         <div className="footer flex-center-column">
           <h1 className="footer-head">The possibilities are endless!</h1>
-          <p>Pre-register today to watch your restaurant grow on autopilot</p>
-          <a className="register-button" href="/">
-            Pre-Register Now
-          </a>
+          <p>Sign up today and watch your restaurant grow on autopilot</p>
 
-          {/* <form action="Submit">
-            <div className="form-container flex-center-row">
-              <input
-                type="text"
-                name="textInput"
-                value={this.state.textInput}
-                onChange={this.onChangeText}
-                className="input-text"
-              />
-              <input
-                type="submit"
-                onClick={this.onClickButton}
-                className="input-button"
-              />
-            </div>
-          </form> */}
+          <Popup
+            modal
+            trigger={<a className="register-button">Pre-Register Now</a>}
+          >
+            {(close) => <Form close={close} />}
+          </Popup>
         </div>
       </div>
     );

@@ -13,7 +13,7 @@ const FeatureContent = [
       paragraph1:
         "Managing finances is a hassle, let CFO AI take over the process for you. The AI takes care of all your accounting and financial management needs and allows you to access handy reports, graphs and statistics without having to crunch the numbers yourself.",
       paragraph2:
-        "You don't have to be a financial expert to see your restaurant thrive. Spend your time on what matters most: your restaurant and its customers.",
+        "You don't have to be a financial expert to see your restaurant thrive. Spend your time on what matters most - your restaurant and its customers.",
       button: "View Demo",
     },
     image: robotCFO,
