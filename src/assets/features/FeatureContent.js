@@ -1,8 +1,7 @@
 import robotCFO from "./robot-cfo.png"
-import robotInterface from "./robot-interface.png"
 import bankruptcyProtection from "./bankruptcy-protection.png"
 import wasteManagement from "./waste-management.png"
-import optimization from "./optimization 2.png"
+import employeeOptimization from "./employee-optimization.png"
 
 const FeatureContent = [
   {
@@ -55,7 +54,7 @@ const FeatureContent = [
         "Make the best use of your resources without all the thinking. ",
       button: "View Demo",
     },
-    image: optimization,
+    image: employeeOptimization,
   },
 ];
 

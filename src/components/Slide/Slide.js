@@ -1,7 +1,7 @@
 import React from "react";
 import "./Slide.css";
 
-import Form from "../Form/Form.js";
+import Modal from "../Modal/Modal.js";
 
 import Popup from "reactjs-popup";
 
@@ -19,7 +19,7 @@ function Slide(props) {
             modal
             trigger={<a className="register-button">{props.text.button}</a>}
           >
-            {(close) => <Form close={close} />}
+            {(close) => <Modal close={close} />}
           </Popup>
         </div>
 

@@ -1,6 +1,6 @@
-import robotInterface from "./robot-interface 2.png";
-import robotWaiter from "./robot-waiter 3.png";
-import robotSupplier from "./inventory.png";
+import robotInterface from "./robot-interface.png";
+import robotWaiter from "./robot-waiter.png";
+import robotInventory from "./robot-inventory.png";
 
 const SliderContent = [
   {
@@ -38,7 +38,7 @@ const SliderContent = [
         "This gives you insights into what customers want the most and also lets you know exactly what to order to reduce wastage.",
       button: "Pre-Register",
     },
-    image: robotSupplier,
+    image: robotInventory,
   },
 ];
 

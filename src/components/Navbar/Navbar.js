@@ -3,6 +3,8 @@ import "./Navbar.css";
 
 import MenuItems from "./MenuItems.js";
 
+import { Link } from "react-router-dom";
+
 class Navbar extends Component {
   state = {
     isHamburgerClicked: false,
@@ -44,9 +46,9 @@ class Navbar extends Component {
             : "nav flex-center-row"
         }
       >
-        <a href="#" className="navbar-link logo-link">
+        <Link to="/" className="navbar-link logo-link">
           <img src={this.props.logo} className="logo" />
-        </a>
+        </Link>
 
         <ul
           className={
@@ -56,9 +58,9 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className={item.cName} href={item.url}>
+                <Link to={item.path} className={item.cName}>
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}

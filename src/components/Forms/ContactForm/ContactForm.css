@@ -1,0 +1,53 @@
+.contact-form {
+  height: 100%;
+  width: 80%;
+}
+
+.contact-form .name-input,
+.contact-form .email-input {
+  height: 35px;
+  width: 100%;
+  margin: 10px;
+
+  padding: 20px;
+  border-radius: 100px;
+  border: solid 1px #313438;
+}
+
+.contact-form .question-input {
+  width: 100%;
+  margin: 10px;
+
+  padding: 10px 20px;
+  border-radius: 18px;
+  border: solid 1px #313438;
+}
+
+.contact-form .name-input:focus,
+.contact-form .email-input:focus,
+.contact-form .question-input:focus {
+  outline: none;
+  box-shadow: 0 0 3pt 1pt #00acff;
+}
+
+.contact-form .submit-input {
+  padding: 10px;
+  width: 100%;
+
+  background-color: #00acff;
+  color: #fff;
+  font-size: 15pt;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 100px;
+}
+
+.contact-form .submit-input:hover {
+    color: #fff34b;
+}
+
+.contact-form .submit-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1pt #00acff;
+}

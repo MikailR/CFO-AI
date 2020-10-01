@@ -1,12 +1,12 @@
 const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        path: '/',
         cName: 'navbar-link navbar-menu-item home-link'
     },
     {
         title: 'Contact',
-        url: '#',
+        path: '/contact',
         cName: 'navbar-link navbar-menu-item contact-link'
     }
 ]

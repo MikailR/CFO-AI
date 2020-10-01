@@ -1,0 +1,40 @@
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #000950;
+  }
+  
+  .footer .register-button {
+    margin: auto;
+  }
+  
+  #footer-pattern {
+    position: relative;
+    /* top: 20px; */
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  #footer-pattern path {
+    width: 100%;
+    fill: #000950;
+  }
+  
+  .footer h1,
+  .footer p {
+    color: white;
+  }
+  
+  .footer p {
+    font-size: 20pt;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer p {
+      font-size: 18pt;
+    }
+  }

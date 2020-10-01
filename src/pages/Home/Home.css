@@ -1,0 +1,60 @@
+.slider-background {
+  background-image: url("../../assets/slider/slider-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border: none;
+  width: 100%;
+  padding: 0;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+@media only screen and (max-width: 992px) {
+  .slider-background {
+    height: auto;
+  }
+}
+
+.slider {
+  margin: 125px 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  .slider {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 100px;
+  }
+}
+
+.explore {
+  background: linear-gradient(to bottom, #f5f7f9 0%, #fff 100%);
+}
+
+.explore-head {
+  color: #313438;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.explore-separator {
+  border: solid 2px #00acff;
+  width: 80px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.features {
+  margin: 0 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  .features {
+    margin: 0 25px;
+  }
+}
