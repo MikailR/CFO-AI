@@ -1,8 +1,6 @@
 import React from "react";
 import "./Footer.css";
 
-import wave from "../../assets/footer/wave.svg";
-import { ReactComponent as Wave } from "../../assets/footer/wave.svg";
 import Modal from "../Modal/Modal.js";
 
 import Popup from "reactjs-popup";
