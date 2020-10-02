@@ -1,45 +1,44 @@
 .footer {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    background-color: #000950;
-  }
-  
-  .footer .register-button {
-    margin: auto;
-  }
-  
-  #footer-pattern {
-    /* Fixes iOS white line lol */
-    z-index: -999;
-    position: relative;
-    top: 1px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #000950;
+}
 
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: green;
-  }
-  
-  #footer-pattern path {
-    width: 100%;
-    fill: #000950;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .footer h1,
+.footer .register-button {
+  margin: auto;
+}
+
+#footer-pattern {
+  /* Fixes iOS white line lol */
+  z-index: -999;
+  position: relative;
+  top: 1px;
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#footer-pattern path {
+  width: 100%;
+  fill: #000950;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer h1,
+.footer p {
+  color: white;
+}
+
+.footer p {
+  font-size: 20pt;
+}
+
+@media only screen and (max-width: 768px) {
   .footer p {
-    color: white;
+    font-size: 18pt;
   }
-  
-  .footer p {
-    font-size: 20pt;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .footer p {
-      font-size: 18pt;
-    }
-  }
+}
