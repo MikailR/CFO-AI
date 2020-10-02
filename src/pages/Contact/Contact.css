@@ -9,7 +9,7 @@
 
   text-align: center;
   border-radius: 10px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .contact .form-header {
@@ -28,10 +28,15 @@
 @media only screen and (max-width: 992px) {
   .contact-image {
     margin-bottom: 25px;
+    width: 60%;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .contact-image {
+    width: 70%;
+  }
+
   .contact .form-paragraph {
     font-size: 14pt;
   }

@@ -1,6 +1,27 @@
 .contact-form {
-  height: 100%;
   width: 80%;
+}
+
+.contact-form-disclaimer {
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form-disclaimer {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.contact-form p {
+  align-self: left;
 }
 
 .contact-form .name-input,
@@ -16,7 +37,7 @@
 
 .contact-form .question-input {
   width: 100%;
-  margin: 10px;
+  margin: 20px;
 
   padding: 10px 20px;
   border-radius: 18px;
@@ -44,10 +65,10 @@
 }
 
 .contact-form .submit-input:hover {
-    color: #fff34b;
+  color: #fff34b;
 }
 
 .contact-form .submit-input:focus {
-    outline: none;
-    box-shadow: 0 0 0 1pt #00acff;
+  outline: none;
+  box-shadow: 0 0 0 1pt #00acff;
 }

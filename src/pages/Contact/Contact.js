@@ -10,9 +10,9 @@ export class Contact extends Component {
     return (
       <div className="contact flex-center-column">
         <div className="contact-form-container container">
-          <h1 className="form-header">HAVE SOME QUESTIONS?</h1>
+          <h1 className="form-header">GOT A QUESTION?</h1>
           <p className="form-paragraph">
-            Then we'd love to get in contact with you!
+            Then we'd love to talk to you!
           </p>
 
           <div className="row">
