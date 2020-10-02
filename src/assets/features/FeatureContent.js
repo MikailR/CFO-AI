@@ -28,7 +28,7 @@ const FeatureContent = [
         "And of course, if you decide to pull out of the fund, every cent can easily be retrieved.",
       button: "View Demo",
     },
-    image: bankruptcyProtection,
+    image: wasteManagement,
   },
   {
     reverse: true,

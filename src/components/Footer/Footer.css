@@ -10,18 +10,23 @@
   }
   
   #footer-pattern {
+    /* Fixes iOS white line lol */
+    z-index: -999;
     position: relative;
-    /* top: 20px; */
+    top: 1px;
 
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: green;
   }
   
   #footer-pattern path {
     width: 100%;
     fill: #000950;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
   }
   
   .footer h1,
