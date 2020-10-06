@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: auto;
 }
 
 @media only screen and (max-width: 992px) {
@@ -37,13 +38,13 @@
   font-weight: 900;
 }
 
-.register-button {
+.button-container {
   margin-top: 20px;
-  align-self: flex-start;
+}
 
+.register-button {
   border: 3px solid #fff34b;
   border-radius: 100px;
-  /* background-color: #ffd700; */
   color: #fff34b;
 
   text-decoration: none;
@@ -51,12 +52,34 @@
   font-size: 16pt;
 
   padding: 8px 30px;
+  margin-top: 20px;
+  margin-right: auto;
 }
 
 .register-button:hover {
   text-decoration: none;
   cursor: pointer;
   color: white;
+}
+
+.view-demo-button {
+  border: 3px solid #00acff;
+  border-radius: 100px;
+  background-color: #00acff;
+  color: #fff;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16pt;
+
+  padding: 8px 30px;
+  margin-left: 15px;
+}
+
+.view-demo-button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000950;
 }
 
 #slide-image {

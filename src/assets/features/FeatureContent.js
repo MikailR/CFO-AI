@@ -23,12 +23,12 @@ const FeatureContent = [
     text: {
       headline: "Bankruptcy Protection",
       paragraph1:
-        "Protect your restaurant from bankruptcy with micro-financing options to breathe in times of need. CFO AI contributes a percentage of your profits to our Community Fund so that your loans can have a much higher principal than your total contributions.",
+        "Protect your restaurant from bankruptcy with micro-financing options to breathe in times of need. CFO AI contributes a percentage of your revenue to its Community Fund so that when you qualify, your loans can have a much higher principal than your total contributions.",
       paragraph2:
-        "And of course, if you decide to pull out of the fund, every cent can easily be retrieved.",
+        "And of course, if you decide to pull out of the fund or if CFO AI detects that there is a regional emergency, every cent can easily be retrieved.",
       button: "View Demo",
     },
-    image: wasteManagement,
+    image: bankruptcyProtection,
   },
   {
     reverse: true,
@@ -36,9 +36,9 @@ const FeatureContent = [
     text: {
       headline: "Waste Management",
       paragraph1:
-        "Stop throwing your money away by being a victim of food wastage. We have partnered with Kitro to automate the monitoring of garbage disposal. Using a camera and scale device on disposal bins, the AI pinpoints the ingredients that are being wasted and provides actionable insights to steer your restaurant back to peak efficiency.",
+        "Stop throwing away money by being a victim of food wastage. We have partnered with Kitro to automate the monitoring of your garbage disposal. Using a camera and scale device on disposal bins, the AI pinpoints the ingredients that are being wasted and provides actionable insights to steer your restaurant back to peak efficiency.",
       paragraph2:
-        "Save the planet while also boosting your restaurant's profits by reducing food wastage. ",
+        "Boost your restaurant's profits by reducing food wastage and saving the planet.",
       button: "View Demo",
     },
     image: wasteManagement,
@@ -49,9 +49,9 @@ const FeatureContent = [
     text: {
       headline: "Staff and Menu Optimization",
       paragraph1:
-        "Getting the most out of your restaurant staff involves making difficult decisions. Give your mind a rest since CFO AI has all the data required to make these decisions for you. With its POS integration, CFO AI can advise you on staff deployment in accordance with peak and off-peak hours.  In addition, the AI can also use the POS data to determine the performance of different menu items and then provide appropriate menu recommendations. ",
+        "CFO AI puts extra weight on hospitality metrics when ranking employees and trains them to engage with customers in a way that maximizes your return rate. Also, with its POS integration, CFO AI can determine the performance of different menu items and to generate profitable menu changes.",
       paragraph2:
-        "Make the best use of your resources without all the thinking. ",
+        "Maximize the use of all your restaurant data without having to do the math yourself!",
       button: "View Demo",
     },
     image: employeeOptimization,

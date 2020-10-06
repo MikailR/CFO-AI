@@ -1,44 +1,56 @@
 import robotInterface from "./robot-interface.png";
 import robotWaiter from "./robot-waiter.png";
-import robotInventory from "./robot-inventory.png";
+import robotInventory from "./robot-inventory 2.png";
+import robotMenu from "./robot-menu.png";
 
 const SliderContent = [
   {
-    id: 0,
     text: {
       headline: "Restaurant Growth On Autopilot",
       paragraph1:
-        "Join 600+ restaurants and pre-register for CFO AI. With actionable insights, recommendations powered by Artificial Intelligence, and benchmarking against your competitors, you don't want to wait!",
+        "Join 600+ restaurants and pre-register for CFO AI. With actionable insights powered by Artificial Intelligence, benchmarking against your competitors, and recession proof bankruptcy protection, you don't want to wait!",
       paragraph2:
-        "Restaurants around the world have already started using AI to make better financial decisions. Be sure to pre-register for your free demo when we launch.",
-      test: "Actionable insights and recommendations powered by artificial intelligence",
-      button: "Pre-Register",
+        "Restaurants around the world have already started using AI to make more profitable decisions. Be sure to pre-register today so you don't get left behind!.",
+      button1: "Pre-Register",
+      button2: "View Demo",
     },
     image: robotInterface,
   },
   {
-    id: 1,
     text: {
-      headline: "Hospitality-Centred Staff Optimizations",
+      headline: "Menu Optimization To Maximize Profit",
       paragraph1:
-        "BDO Canada reports that customers value hospitality, but a time in motion study done by a Sweedish WeOrder Restaurant found that employees spend more than 85% of their time on mundane tasks like taking or fulfulling orders.",
+        "CFO AI tracks your sales data and customer food wastage to figure out which menu items are the least/most popular and are generating the least/most profit.",
       paragraph2:
-        "CFO AI's staff optimization feature lets your employees focus on hospitality by analyzing their performance metrics, and gives profitable recommendations on shift scheduling and staff to table ratios.",
-      button: "Pre-Register",
+        "It uses this to generate lucrative recommendations on price changes, items to drop from the menu, and items to pair in a combo for more purchases and increased profits.",
+      button1: "Pre-Register",
+      button2: "View Demo",
     },
-    image: robotWaiter,
+    image: robotMenu,
   },
   {
-    id: 2,
     text: {
-      headline: "Menu And Inventory Management",
+      headline: "Supply And Inventory Management",
       paragraph1:
-        "Our Kitro partnetship lets CFO AI accurately track your food wastage. CFO AI also analyzes your sales data to generate recommendations such as price changes or new combos.",
+        "By tracking metrics like food wastage and sales data, CFO AI manages your inventory on autopilot to make sure you never waste any raw materials or go out of stock in a lunch rush again.",
       paragraph2:
-        "This gives you insights into what customers want the most and also lets you know exactly what to order to reduce wastage.",
-      button: "Pre-Register",
+        "It predicts when menu items will be in higher demand and automatically orders exactly what you need, just in time for when you need it. CFO AI also connects you to the most reliable suppliers to ensure that your order is always fulfilled.",
+      button1: "Pre-Register",
+      button2: "View Demo",
     },
     image: robotInventory,
+  },
+  {
+    text: {
+      headline: "Staff Management And Optimization",
+      paragraph1:
+        "CFO AI measures employee performance using data points like customer retention rates and tips, to generate employee rankings and profitable recommendations for staff combinations and scheduling.",
+      paragraph2:
+        "This skyrockets your number of return customers because your employees work harder to  boost their ranking. In other words, it ‘gamifies’ their routine tasks and makes the competition profitable.",
+      button1: "Pre-Register",
+      button2: "View Demo",
+    },
+    image: robotWaiter,
   },
 ];
 

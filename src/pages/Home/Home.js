@@ -44,8 +44,8 @@ export class Home extends Component {
       <div className="home">
         <div className="slider-background">
           <Slider {...sliderSettings} className="slider">
-            {this.state.sliderContent.map((slide) => {
-              return <Slide {...slide} key={slide.id} />;
+            {this.state.sliderContent.map((slide, index) => {
+              return <Slide {...slide} key={index} />;
             })}
           </Slider>
         </div>

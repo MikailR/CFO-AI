@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />
       </Switch>
-      
+
       <Footer />
     </Router>
   );

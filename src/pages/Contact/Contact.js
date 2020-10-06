@@ -12,7 +12,7 @@ export class Contact extends Component {
         <div className="contact-form-container container">
           <h1 className="form-header">GOT A QUESTION?</h1>
           <p className="form-paragraph">
-            Then we'd love to talk to you!
+            Then we'd love to talk with you!
           </p>
 
           <div className="row">

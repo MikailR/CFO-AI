@@ -37,6 +37,16 @@ class Navbar extends Component {
     }));
   };
 
+  closeHamburgerMenu = () => {
+    this.setState((prevState) => {
+      if (prevState.isHamburgerClicked) {
+        return ({
+          isHamburgerClicked: false,
+        })
+      }
+    })
+  }
+
   render() {
     return (
       <nav
@@ -58,7 +68,7 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.path} className={item.cName}>
+                <Link to={item.path} className={item.cName} onClick={this.closeHamburgerMenu} >
                   {item.title}
                 </Link>
               </li>
