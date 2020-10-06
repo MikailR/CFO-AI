@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import "./ContactForm.css";
 
-import robotCFO from "../../../assets/features/robot-cfo.png";
+import logo from "../../../assets/logos/logo-img.png";
 
 export class ContactForm extends Component {
   render() {
     return (
       <React.Fragment>
         <form className="contact-form flex-center-column">
+          <div id="contact-form-logo">
+            <img className="contact-form-logo" src={logo} alt="logo"/>
+          </div>
           <p className="contact-form-disclaimer">
             Feel free to ask us anything below
           </p>

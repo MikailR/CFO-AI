@@ -2,11 +2,22 @@
   width: 80%;
 }
 
+#contact-form-logo {
+  height: 100px;
+}
+
+.contact-form-logo {
+  height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  #contact-form-logo {
+    display: none;
+  }
+}
+
 .contact-form-disclaimer {
-  width: 100%;
   margin: 0;
-  padding-left: 20px;
-  text-align: left;
 }
 
 @media only screen and (max-width: 768px) {
