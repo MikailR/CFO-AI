@@ -1,6 +1,6 @@
 import robotInterface from "./robot-interface.png";
 import robotWaiter from "./robot-waiter.png";
-import robotInventory from "./robot-inventory 2.png";
+import robotInventory from "./robot-inventory.png";
 import robotMenu from "./robot-menu.png";
 
 const SliderContent = [
@@ -34,7 +34,7 @@ const SliderContent = [
       paragraph1:
         "By tracking metrics like food wastage and sales data, CFO AI manages your inventory on autopilot to make sure you never waste any raw materials or go out of stock in a lunch rush again.",
       paragraph2:
-        "It predicts when menu items will be in higher demand and automatically orders exactly what you need, just in time for when you need it. CFO AI also connects you to the most reliable suppliers to ensure that your order is always fulfilled.",
+        "It predicts the changing demand of different menu items and automatically orders exactly what you need, just in time for when you need it. CFO AI also connects you to the most reliable suppliers to ensure that your order is always fulfilled.",
       button1: "Pre-Register",
       button2: "View Demo",
     },
@@ -46,7 +46,7 @@ const SliderContent = [
       paragraph1:
         "CFO AI measures employee performance using data points like customer retention rates and tips, to generate employee rankings and profitable recommendations for staff combinations and scheduling.",
       paragraph2:
-        "This skyrockets your number of return customers because your employees work harder to  boost their ranking. In other words, it ‘gamifies’ their routine tasks and makes the competition profitable.",
+        "This skyrockets your number of return customers and increases your employee productivity as they work towards boosting their ranking. In other words, it ‘gamifies’ their routine tasks and makes the competition profitable.",
       button1: "Pre-Register",
       button2: "View Demo",
     },

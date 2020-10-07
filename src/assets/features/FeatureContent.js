@@ -23,9 +23,9 @@ const FeatureContent = [
     text: {
       headline: "Bankruptcy Protection",
       paragraph1:
-        "Protect your restaurant from bankruptcy with micro-financing options to breathe in times of need. CFO AI contributes a percentage of your revenue to its Community Fund so that when you qualify, your loans can have a much higher principal than your total contributions.",
+        "CFO AI has reinvented insurance to prevent a financial crisis before it even happens. Using a complex array of data points, it predicts when your restaurant is about to go under and qualifies you for micro-financing to make sure that you stay afloat.",
       paragraph2:
-        "And of course, if you decide to pull out of the fund or if CFO AI detects that there is a regional emergency, every cent can easily be retrieved.",
+        "Insurance to help you avoid bankruptcy rather than dealing with it after the fact.",
       button: "Learn More",
     },
     image: bankruptcyProtection,
@@ -49,7 +49,7 @@ const FeatureContent = [
     text: {
       headline: "Staff and Menu Optimization",
       paragraph1:
-        "CFO AI puts extra weight on hospitality metrics when ranking employees and trains them to engage with customers in a way that maximizes your return rate. Also, with its POS integration, CFO AI can determine the performance of different menu items and to generate profitable menu changes.",
+        "CFO AI puts extra weight on hospitality metrics when ranking employees and trains them to engage with customers in a way that maximizes your return rate. With its POS integration, CFO AI also analyzes the performance of different menu items and identifies the most profitable menu changes.",
       paragraph2:
         "Maximize the use of all your restaurant data without having to do the math yourself!",
       button: "Learn More",

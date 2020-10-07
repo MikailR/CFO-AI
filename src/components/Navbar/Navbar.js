@@ -68,6 +68,7 @@ class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
+                {/* TODO: Add a dropdown menu for features */}
                 <Link to={item.path} className={item.cName} onClick={this.closeHamburgerMenu} >
                   {item.title}
                 </Link>
