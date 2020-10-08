@@ -7,11 +7,11 @@ export class Features extends Component {
   render() {
     return (
       <div className={this.props.className}>
-        {this.props.features.map((feature) => (
-          <>
+        {this.props.features.map((feature, index) => (
+          <div key={index}>
             <Feature feature={feature} className="feature" />
             {feature.isLast || <div className="feature-separator" />}
-          </>
+          </div>
         ))}
       </div>
     );

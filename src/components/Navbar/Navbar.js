@@ -79,7 +79,7 @@ class Navbar extends Component {
 
         <div className="hamburger-icon" onClick={this.onHamburgerClick}>
           <i
-            class={this.state.isHamburgerClicked ? "fa fa-times" : "fa fa-bars"}
+            className={this.state.isHamburgerClicked ? "fa fa-times" : "fa fa-bars"}
             aria-hidden="true"
           ></i>
         </div>
