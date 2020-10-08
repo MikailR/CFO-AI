@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CFOAIQuoteCarousel.css";
+import "./SAMOQuoteCarousel.css";
 
 import Arrow from "../../../components/Slide/Arrow/Arrow.js";
 import Dot from "../../../components/Slide/Dot/Dot.js";
@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import CFOAIQuoteContent from "../../../assets/quotes/CFOAIQuoteContent.js";
+import SAMOQuoteContent from "../../../assets/quotes/SAMOQuoteContent.js";
 
-export class CFOAIQuoteCarousel extends Component {
+export class SAMOQuoteCarousel extends Component {
   render() {
     const sliderSettings = {
       dots: true,
@@ -27,15 +27,13 @@ export class CFOAIQuoteCarousel extends Component {
       <div className="quote-container">
         <h1 className="header">BDO Canada Highlights</h1>
         <Slider {...sliderSettings} className="quote-slider">
-            {CFOAIQuoteContent.map((quote, index) => {
-                return (
-                    <div className="quote-content">{quote.content}</div>
-                )
-            })}
+          {SAMOQuoteContent.map((quote, index) => {
+            return <div key={index} className="quote-content">{quote.content}</div>;
+          })}
         </Slider>
       </div>
     );
   }
 }
 
-export default CFOAIQuoteCarousel;
+export default SAMOQuoteCarousel;

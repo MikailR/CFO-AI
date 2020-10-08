@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./BPJumbo.css";
 
 import Modal from "../../../components/Modal/Modal.js";
-import BulletPoint from "../../../components/BulletPoint/BulletPoint.js";
 
 import Popup from "reactjs-popup";
 
@@ -15,7 +14,7 @@ export class BPJumbo extends Component {
         <div className="container-fluid">
           <div className="row">
             <div id="bankruptcy-protection-text" className="col-lg">
-              <h1 className="header">Bankrupcty Prevention</h1>
+              <h1 className="header">Bankruptcy Prevention</h1>
               <p className="paragraph-normal">
                 CFO AI introduces a new type of insurance, designed to steer
                 your restaurant back onto the path of success when times get

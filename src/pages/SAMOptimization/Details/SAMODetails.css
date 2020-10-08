@@ -1,0 +1,32 @@
+.samo-details {
+    padding: 50px 100px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .samo-details {
+      padding: 50px 30px;
+    }
+  }
+  
+  .samo-details .header {
+    text-align: center;
+    font-size: 28pt;
+    margin-bottom: 50px;
+    color: #313438;
+  }
+  
+  .samo-details .bullet-container {
+      margin-bottom: 50px;
+  }
+  
+  .samo-bullet-point {
+    margin: 15px 0;
+  }
+  
+  .samo-details .paragraph {
+      text-align: justify;
+      font-size: 16pt;
+      color: #313438;
+      margin-bottom: 25px;
+  }
+  

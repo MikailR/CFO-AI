@@ -1,0 +1,32 @@
+.waste-management-details {
+    padding: 50px 100px;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .waste-management-details {
+      padding: 50px 30px;
+    }
+  }
+  
+  .waste-management-details .header {
+    text-align: center;
+    font-size: 28pt;
+    margin-bottom: 50px;
+    color: #313438;
+  }
+  
+  .waste-management-details .bullet-container {
+      margin-bottom: 50px;
+  }
+  
+  .waste-management-bullet-point {
+    margin: 15px 0;
+  }
+  
+  .waste-management-details .paragraph {
+      text-align: justify;
+      font-size: 16pt;
+      color: #313438;
+      margin-bottom: 25px;
+  }
+  

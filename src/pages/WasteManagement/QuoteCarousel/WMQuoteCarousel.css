@@ -1,0 +1,29 @@
+.wm-quote-container {
+  background-color: #c1d0da;
+  padding: 30px 100px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wm-quote-container {
+    padding: 30px;
+  }
+}
+
+.wm-quote-container .header {
+  text-align: center;
+  font-weight: 600;
+  color: #313438;
+}
+
+.wm-quote-container .quote-content {
+  text-align: center;
+  color: #313438;
+  padding: 10px 15px;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+.wm-quote-container .quote-content:focus {
+  outline: none;
+}

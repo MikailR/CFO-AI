@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./CFOAIQuoteCarousel.css";
+import "./WMQuoteCarousel.css";
 
 import Arrow from "../../../components/Slide/Arrow/Arrow.js";
 import Dot from "../../../components/Slide/Dot/Dot.js";
@@ -8,9 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import CFOAIQuoteContent from "../../../assets/quotes/CFOAIQuoteContent.js";
-
-export class CFOAIQuoteCarousel extends Component {
+export class WMQuoteCarousel extends Component {
   render() {
     const sliderSettings = {
       dots: true,
@@ -24,18 +22,16 @@ export class CFOAIQuoteCarousel extends Component {
     };
 
     return (
-      <div className="quote-container">
-        <h1 className="header">BDO Canada Highlights</h1>
-        <Slider {...sliderSettings} className="quote-slider">
-            {CFOAIQuoteContent.map((quote, index) => {
-                return (
-                    <div className="quote-content">{quote.content}</div>
-                )
-            })}
-        </Slider>
+      <div className="wm-quote-container">
+        <h1 className="header">BDO Canada Highlight</h1>
+        <div className="quote-content">
+          “We asked restaurant owners their top 3 goals from a randomized list
+          of reasons: 58% Improving the efficiency of operation, 51% Increasing
+          annual net sales, 48% staff productivity, 37% more menu items”
+        </div>
       </div>
     );
   }
 }
 
-export default CFOAIQuoteCarousel;
+export default WMQuoteCarousel;
