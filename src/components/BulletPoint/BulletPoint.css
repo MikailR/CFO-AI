@@ -1,0 +1,14 @@
+.bullet-point {
+    align-items: flex-start !important;
+    background-color: purple;
+}
+
+.bullet-text {
+  margin: 0 10px;
+  font-size: 16pt;
+  background-color: orange;
+}
+
+.check-bullet {
+    margin-top: 4px;
+}

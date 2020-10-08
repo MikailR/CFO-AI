@@ -1,0 +1,71 @@
+.cfo-ai .jumbo {
+  min-height: 90vh;
+  padding: 0 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cfo-ai .jumbo {
+    padding: 125px 25px;
+  }
+}
+
+#cfo-ai-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+#cfo-ai-text .header,
+#cfo-ai-text .paragraph-normal,
+#cfo-ai-text .paragraph-bold {
+  color: #313438;
+}
+
+#cfo-ai-text .paragraph-normal,
+#cfo-ai-text .paragraph-bold {
+  font-size: 16pt;
+}
+
+#cfo-ai-text .header {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#cfo-ai-text .paragraph-bold {
+  font-weight: 900;
+}
+
+#cfo-ai-text .register-button {
+  background-color: #00acff;
+  border-radius: 100px;
+  color: #fff;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16pt;
+
+  padding: 8px 30px;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+#cfo-ai-text .register-button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff34b;
+}
+
+
+.quote-container {
+  height: 150px;
+  background-color: #f5f6f8;
+}
+
+.bullet-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1em;
+}

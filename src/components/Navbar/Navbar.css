@@ -10,6 +10,7 @@
 
   width: 100%;
   background-color: rgba(0, 9, 80, 0.5);
+  background-color: #000950;
 
   transition: all 0.3s ease;
 }
@@ -57,7 +58,7 @@
 
 .contact-link {
   padding: 8px 20px;
-  background-color: #00acff;
+  background-color: #FF4365;
   border-radius: 100px;
 }
 
@@ -76,7 +77,7 @@
 */
 @media only screen and (max-width: 992px) {
   .nav {
-    background-color: transparent;
+    /* background-color: transparent; */
     padding: 0 10px;
   }
 

@@ -4,6 +4,21 @@
     justify-content: center;
 }
 
+#feature-text .header,
+#feature-text .paragraph-normal,
+#feature-text .paragraph-bold {
+  color: #313438;
+}
+
+#feature-text .paragraph-normal,
+#feature-text .paragraph-bold {
+  font-size: 16pt;
+}
+
+#feature-text .paragraph-bold {
+  font-weight: 900;
+}
+
 .demo-button {
     margin-top: 10px;
   

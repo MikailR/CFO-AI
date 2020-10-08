@@ -10,7 +10,7 @@ const MenuItems = [
         cName: 'navbar-link navbar-menu-item features-link'
     },
     {
-        title: 'Contact',
+        title: 'Contact Us',
         path: '/contact',
         cName: 'navbar-link navbar-menu-item contact-link'
     }

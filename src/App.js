@@ -4,24 +4,27 @@ import "./App.css";
 import logo from "./assets/logos/logo-light.png";
 
 import Navbar from "./components/Navbar/Navbar.js";
-import Footer from "./components/Footer/Footer.js";
 
 import Home from "./pages/Home/Home.js";
 import Contact from "./pages/Contact/Contact.js";
-import Test from "./pages/Test.js";
+import CFOAI from "./pages/CFOAI/CFOAI.js";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.js";
 
 function App() {
   return (
     <Router>
-      <Navbar logo={logo}></Navbar>
+      <ScrollToTop />
+        <Navbar logo={logo}></Navbar>
 
-      <Switch>
-        {/* TODO: Add routes to explore pages */}
-        <Route path="/contact" component={Contact} />
-        <Route exact path="/" component={Home} />
-      </Switch>
+        <Switch>
+          {/* TODO: Add routes to explore pages */}
+
+          <Route path="/cfo-ai" component={CFOAI} />
+          <Route path="/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+        </Switch>
     </Router>
   );
 }

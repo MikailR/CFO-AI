@@ -14,6 +14,7 @@ const FeatureContent = [
       paragraph2:
         "You don't have to be a financial expert to see your restaurant thrive. Spend your time on what matters most - your restaurant and its customers.",
       button: "Learn More",
+      buttonPath: "cfo-ai",
     },
     image: robotCFO,
   },
@@ -27,6 +28,7 @@ const FeatureContent = [
       paragraph2:
         "Insurance to help you avoid bankruptcy rather than dealing with it after the fact.",
       button: "Learn More",
+      buttonPath: "bankruptcy-protection",
     },
     image: bankruptcyProtection,
   },
@@ -40,6 +42,7 @@ const FeatureContent = [
       paragraph2:
         "Boost your restaurant's profits by reducing food wastage and saving the planet.",
       button: "Learn More",
+      buttonPath: "waste-management",
     },
     image: wasteManagement,
   },
@@ -53,6 +56,7 @@ const FeatureContent = [
       paragraph2:
         "Maximize the use of all your restaurant data without having to do the math yourself!",
       button: "Learn More",
+      buttonPath: "staff-and-menu-optimization",
     },
     image: employeeOptimization,
   },

@@ -41,3 +41,24 @@
     font-size: 18pt;
   }
 }
+
+.footer .register-button {
+  border-radius: 100px;
+  color: white;
+
+  background-color: #FF4365;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16pt;
+
+  padding: 8px 30px;
+  margin-top: 20px;
+  margin-right: auto;
+}
+
+.footer .register-button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff34b;
+}

@@ -10,7 +10,7 @@ const SliderContent = [
       paragraph1:
         "Join 600+ restaurants and pre-register for CFO AI. With actionable insights powered by Artificial Intelligence, benchmarking against your competitors, and recession proof bankruptcy protection, you don't want to wait!",
       paragraph2:
-        "Restaurants around the world have already started using AI to make more profitable decisions. Be sure to pre-register today so you don't get left behind!.",
+        "Restaurants around the world have already started using AI to make more profitable decisions. Be sure to pre-register today so you don't get left behind!",
       button1: "Pre-Register",
       button2: "View Demo",
     },
