@@ -1,5 +1,8 @@
 .bullet-point {
-  align-items: flex-start !important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .check-bullet {
@@ -10,4 +13,5 @@
 .bullet-text {
   margin: 0 10px;
   font-size: 16pt;
+  color: #313438;
 }

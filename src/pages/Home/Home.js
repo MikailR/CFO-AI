@@ -36,8 +36,8 @@ export class Home extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      nextArrow: <Arrow isReverse={false} />,
-      prevArrow: <Arrow isReverse />,
+      nextArrow: <Arrow isLight size={"35px"} />,
+      prevArrow: <Arrow isReverse isLight size={"35px"} />,
       customPaging: Dot,
     };
 

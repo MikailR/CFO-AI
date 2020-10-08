@@ -1,0 +1,34 @@
+.bankruptcy-protection-details {
+    padding: 50px 100px;
+    margin-top: 50px;
+    background-color: #c1d0da;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .bankruptcy-protection-details {
+      padding: 50px 30px;
+    }
+  }
+  
+  .bankruptcy-protection-details .header {
+    text-align: center;
+    font-size: 28pt;
+    margin-bottom: 50px;
+    color: #313438;
+  }
+  
+  .bankruptcy-protection-details .bullet-container {
+      margin-bottom: 50px;
+  }
+  
+  .bankruptcy-protection-bullet-point {
+    margin: 15px 0;
+  }
+  
+  .bankruptcy-protection-details .paragraph {
+      text-align: justify;
+      font-size: 16pt;
+      color: #313438;
+      margin-bottom: 25px;
+  }
+  

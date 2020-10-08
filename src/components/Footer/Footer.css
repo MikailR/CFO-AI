@@ -4,13 +4,9 @@
   background-color: #000950;
 }
 
-.footer .register-button {
-  margin: auto;
-}
-
 #footer-pattern {
   /* Fixes iOS white line lol */
-  z-index: -999;
+  z-index: -99;
   position: relative;
   top: 1px;
 
@@ -53,8 +49,7 @@
   font-size: 16pt;
 
   padding: 8px 30px;
-  margin-top: 20px;
-  margin-right: auto;
+  margin: 20px auto;
 }
 
 .footer .register-button:hover {

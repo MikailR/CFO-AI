@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar/Navbar.js";
 import Home from "./pages/Home/Home.js";
 import Contact from "./pages/Contact/Contact.js";
 import CFOAI from "./pages/CFOAI/CFOAI.js";
+import BankruptcyProtection from "./pages/BankruptcyProtection/BankruptcyProtection.js";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.js";
@@ -16,15 +17,16 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-        <Navbar logo={logo}></Navbar>
+      <Navbar logo={logo}></Navbar>
 
-        <Switch>
-          {/* TODO: Add routes to explore pages */}
+      <Switch>
+        {/* TODO: Add routes to explore pages */}
 
-          <Route path="/cfo-ai" component={CFOAI} />
-          <Route path="/contact" component={Contact} />
-          <Route exact path="/" component={Home} />
-        </Switch>
+        <Route path="/cfo-ai" component={CFOAI} />
+        <Route path="/bankruptcy-protection" component={BankruptcyProtection} />
+        <Route path="/contact" component={Contact} />
+        <Route exact path="/" component={Home} />
+      </Switch>
     </Router>
   );
 }

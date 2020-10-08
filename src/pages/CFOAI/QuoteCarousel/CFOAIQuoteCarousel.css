@@ -1,0 +1,32 @@
+.quote-container {
+  background-color: #c1d0da;
+  padding: 30px 100px 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .quote-container {
+        padding: 30px 30px 80px;
+    }
+}
+
+.quote-container .header {
+    text-align: center;
+    font-weight: 600;
+    color: #313438;
+}
+
+.quote-slider {
+    margin-top: 20px;
+}
+
+.quote-content {
+    text-align: center;
+    color: #313438;
+    padding: 10px 15px;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+.quote-content:focus {
+    outline: none;
+}

@@ -1,0 +1,30 @@
+.cfo-ai-details {
+  padding: 50px 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cfo-ai-details {
+    padding: 50px 30px;
+  }
+}
+
+.cfo-ai-details .header {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #313438;
+}
+
+.cfo-ai-details .bullet-container {
+    margin-bottom: 50px;
+}
+
+.cfo-ai-bullet-point {
+  margin: 15px 0;
+}
+
+.cfo-ai-details .paragraph {
+    text-align: justify;
+    font-size: 16pt;
+    color: #313438;
+    margin-bottom: 25px;
+}
