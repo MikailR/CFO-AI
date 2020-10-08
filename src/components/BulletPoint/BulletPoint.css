@@ -10,5 +10,7 @@
 }
 
 .check-bullet {
+    height: 24px;
     margin-top: 4px;
+    background-color: green;
 }

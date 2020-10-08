@@ -45,6 +45,8 @@ export class ContactForm extends Component {
             value="Send Message"
           ></input>
         </form>
+
+        {/* Embed Google Sheets Script */}
       </React.Fragment>
     );
   }

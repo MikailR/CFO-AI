@@ -38,6 +38,7 @@ export class CFOAI extends Component {
                     <BulletPoint text="Automate your routine tasks" />
                     <BulletPoint text="Rank you against your competitors" />
                     <BulletPoint text="Bring you to peak efficiency" />
+
                   </div>
 
                   <Popup

@@ -7,11 +7,9 @@ const BulletPoint = ({ text }) => {
   return (
     <div className="bullet-point flex-center-row">
       <CheckBullet />
-      <p className="bullet-text">
-        {/* <CheckBullet /> */}
-        {/* {" "} */}
+      <div className="bullet-text">
         {text}
-      </p>
+      </div>
     </div>
   );
 };
