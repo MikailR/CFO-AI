@@ -7,11 +7,9 @@ import BulletPoint from "../../components/BulletPoint/BulletPoint.js";
 
 import Popup from "reactjs-popup";
 
-export class CFOAI extends Component {
-  getColor = () => ({
-    color: "#313438",
-  });
+import robotCFO from "../../assets/features/robot-cfo.png";
 
+export class CFOAI extends Component {
   render() {
     return (
       <React.Fragment>
@@ -27,10 +25,8 @@ export class CFOAI extends Component {
                   </p>
 
                   <p className="paragraph-normal">
-                    It effortlessly integrates with your POS to generate
-                    actionable insights, automate your routine tasks, rank you
-                    against your competitors, and bring you to peak operational
-                    efficiency.
+                    It effortlessly integrates with your POS and tracks your
+                    sales and transactions to:
                   </p>
 
                   <div className="bullet-container">
@@ -38,7 +34,6 @@ export class CFOAI extends Component {
                     <BulletPoint text="Automate your routine tasks" />
                     <BulletPoint text="Rank you against your competitors" />
                     <BulletPoint text="Bring you to peak efficiency" />
-
                   </div>
 
                   <Popup
@@ -48,7 +43,9 @@ export class CFOAI extends Component {
                     {(close) => <Modal close={close} />}
                   </Popup>
                 </div>
-                <div id="cfo-ai-image" className="col-lg"></div>
+                <div id="cfo-ai-image" className="col-lg flex-center-row">
+                    <img src={robotCFO} className="cfo-ai-image" />
+                </div>
               </div>
             </div>
           </div>

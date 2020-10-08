@@ -1,15 +1,15 @@
 import React from "react";
 import "./BulletPoint.css";
 
-import CheckBullet from "../../assets/CheckBullet/CheckBullet.js";
+import test from "../../assets/bullets/check-bullet.svg";
 
 const BulletPoint = ({ text }) => {
   return (
     <div className="bullet-point flex-center-row">
-      <CheckBullet />
-      <div className="bullet-text">
+      <img className="check-bullet" src={test} alt="check-style bullet point"/>
+      <p className="bullet-text">
         {text}
-      </div>
+      </p>
     </div>
   );
 };

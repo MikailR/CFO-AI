@@ -1,16 +1,13 @@
 .bullet-point {
-    align-items: flex-start !important;
-    background-color: purple;
+  align-items: flex-start !important;
+}
+
+.check-bullet {
+  margin-top: 4px;
+  height: 24px;
 }
 
 .bullet-text {
   margin: 0 10px;
   font-size: 16pt;
-  background-color: orange;
-}
-
-.check-bullet {
-    height: 24px;
-    margin-top: 4px;
-    background-color: green;
 }

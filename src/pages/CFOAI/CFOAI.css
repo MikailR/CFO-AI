@@ -1,11 +1,12 @@
 .cfo-ai .jumbo {
-  min-height: 90vh;
+  min-height: 80vh;
   padding: 0 100px;
+  align-items: flex-end;
 }
 
 @media only screen and (max-width: 1200px) {
   .cfo-ai .jumbo {
-    padding: 125px 25px;
+    padding: 125px 15px 0;
   }
 }
 
@@ -57,10 +58,36 @@
   color: #fff34b;
 }
 
+#cfo-ai-image {
+    align-items: flex-end !important;
+}
+
+.cfo-ai-image {
+    height: 65vh;
+
+    /* To remove line */
+    position: relative;
+    bottom: -1px;
+    z-index: -999;
+}
+
+@media only screen and (max-width: 768px) {
+    #cfo-ai-image {
+        margin-top: 40px;
+    }
+
+    .cfo-ai-image {
+        height: auto;
+        width: 80%;
+    }
+}
+
 
 .quote-container {
-  height: 150px;
-  background-color: #f5f6f8;
+  height: 200px;
+  /* background-color: #f5f6f8; */
+  background-color: #c1d0da;
+  margin-bottom: 200px;
 }
 
 .bullet-container {
