@@ -1,24 +1,29 @@
-.nav {
-  display: flex;
+.nav-wrap {
   position: fixed;
   top: 0;
   left: 0;
 
-  padding: 0 100px;
-
   z-index: 999;
 
   width: 100%;
-  background-color: rgba(0, 9, 80, 0.5);
+}
+
+.nav {
+  display: flex;
+
+  padding: 0 100px;
+  width: 100%;
+
+  /* background-color: rgba(0, 9, 80, 0.5); */
   background-color: #000950;
 
   transition: all 0.3s ease;
 }
 
 .scrolled {
-    background-color: #000950 !important;
-    box-shadow: 0 3px 10px #000950;
-    transition: all 0.3s ease;
+  /* background-color: #000950 !important; */
+  box-shadow: 0 3px 10px #000950;
+  transition: all 0.3s ease;
 }
 
 .logo {
@@ -52,14 +57,73 @@
 
 .navbar-menu-item:hover {
   text-decoration: none;
+  cursor: pointer;
   color: #fff34b;
   transition: all 0.2 ease-out;
 }
 
+.navbar-menu-item .drop-down-arrow {
+  height: 15px;
+  margin: 0 10px;
+  fill: #fff;
+
+  transition: all 0.3s ease;
+}
+
+.navbar-menu-item:hover .drop-down-arrow {
+  fill: #fff34b !important;
+}
+
+.navbar-menu-item .drop-down-arrow.active {
+  transform: rotate(180deg);
+}
+
+.drop-down-menu {
+  position: absolute;
+  top: 100%;
+
+  background-color: #000950;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 15px;
+  transform: translate(-15px);
+
+  max-height: 0;
+  margin: 0 15px;
+  overflow: hidden;
+
+  list-style-type: none;
+
+  transition: all 0.3s ease;
+}
+
+.drop-down-menu.active {
+  max-height: 300px;
+}
+
+.drop-down-menu-item {
+  display: block;
+  font-size: 14pt;
+  color: white;
+  margin: 10px 0;
+}
+
+.drop-down-menu-item:hover {
+  text-decoration: none;
+  color: #fff34b;
+  cursor: pointer;
+}
+
 .contact-link {
   padding: 8px 20px;
-  background-color: #FF4365;
+  background-color: #ff4365;
   border-radius: 100px;
+}
+
+.nav-menu .register-button {
+  display: none;
 }
 
 .hamburger-icon {
@@ -71,44 +135,96 @@
   margin: 15px;
 }
 
-/* 
-    For Responsive NavBar
-    TODO: Make mobile first rather than desktop first
-*/
 @media only screen and (max-width: 992px) {
   .nav {
-    /* background-color: transparent; */
     padding: 0 10px;
   }
 
   .nav-menu {
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-    position: absolute;
-    top: 100%;
-    left: -100%;
-
+    position: fixed;
+    height: 100%;
     width: 100%;
+
+    overflow: auto;
+
+    top: 0;
+    left: 0;
+    z-index: -999;
+
     background-color: #000950;
 
+    padding: 85px 15px;
+
+    visibility: hidden;
+    opacity: 0;
+
     transition: all 0.2s ease;
-  }
-
-  .navbar-menu-item {
-      display: block;
-      margin-top: 20px;
-      margin-bottom: 0;
-      font-size: 18pt;
-  }
-
-  .contact-link {
-      margin-bottom: 20px;
   }
 
   .nav-menu.active {
-    left: 0;
+    visibility: visible;
+    opacity: 1;
 
     transition: all 0.2s ease;
+  }
+
+  .nav-menu .link-wrapper {
+    width: 100%;
+  }
+
+  .drop-down-menu {
+    position: static;
+
+    padding: 0;
+    transform: none;
+
+    background-color: transparent;
+  }
+
+  .nav-menu .separator {
+    height: 1px;
+    margin: 0 15px;
+    background-color: #00acff;
+  }
+
+  .navbar-menu-item {
+    display: block;
+    font-size: 18pt;
+    font-weight: 400;
+    margin: 15px;
+  }
+
+  .contact-link {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav-menu .register-button {
+    display: block;
+    border-radius: 100px;
+    color: white;
+
+    background-color: #ff4365;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16pt;
+
+    padding: 8px 30px;
+    margin: 50px auto;
+  }
+
+  .nav-menu .robot {
+    width: 80%;
+    margin: auto;
+  }
+
+  .nav-menu .register-button:hover {
+    color: #fff34b;
   }
 
   .hamburger-icon {

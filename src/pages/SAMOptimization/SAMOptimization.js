@@ -4,6 +4,7 @@ import "./SAMOptimization.css";
 import SAMOJumbo from "./Jumbo/SAMOJumbo.js";
 import SAMOQuoteCarousel from "./QuoteCarousel/SAMOQuoteCarousel.js";
 import SAMODetails from "./Details/SAMODetails.js";
+import DemoVideo from "../../components/DemoVideo/DemoVideo.js";
 import Footer from "../../components/Footer/Footer.js";
 
 export class SAMOptimization extends Component {
@@ -14,6 +15,7 @@ export class SAMOptimization extends Component {
           <SAMOJumbo />
           <SAMOQuoteCarousel />
           <SAMODetails />
+          <DemoVideo />
         </div>
 
         <Footer />

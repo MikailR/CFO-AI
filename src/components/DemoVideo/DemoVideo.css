@@ -1,0 +1,29 @@
+.demo-video {
+    height: 75vh;
+    width: 80%;
+    margin: 0 auto 100px;
+    margin-bottom: 100px;
+
+    background-color: #555;
+    color: white;
+    font-size: 28pt;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+    .demo-video {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .demo-video {
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .demo-video {
+        height: 25vh;
+    }
+}

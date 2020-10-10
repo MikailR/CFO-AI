@@ -3,6 +3,7 @@ import "./BankruptcyProtection.css";
 
 import BPJumbo from "./Jumbo/BPJumbo.js";
 import BPDetails from "./Details/BPDetails.js";
+import DemoVideo from "../../components/DemoVideo/DemoVideo.js";
 import Footer from "../../components/Footer/Footer.js";
 
 export class BankruptcyProtection extends Component {
@@ -12,9 +13,10 @@ export class BankruptcyProtection extends Component {
         <div className="bankruptcy-protection">
           <BPJumbo />
           <BPDetails />
+          <DemoVideo />
         </div>
 
-        <Footer color={"#c1d0da"} />
+        <Footer />
       </React.Fragment>
     );
   }

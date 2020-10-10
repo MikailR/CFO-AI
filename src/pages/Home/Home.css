@@ -35,11 +35,12 @@
 
 .explore {
   background: linear-gradient(to bottom, #f5f7f9 0%, #fff 100%);
+  overflow: hidden;
 }
 
 .explore-head {
   color: #313438;
-  padding-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 
