@@ -14,22 +14,26 @@ const MenuItems = [
             {
                 title: 'CFO AI',
                 path: '/cfo-ai',
-                cName: 'feature-link feature-menu-item drop-down-menu-item'
+                cName: 'feature-link feature-menu-item drop-down-menu-item',
+                isSubItem: true,
             },
             {
                 title: 'Bankruptcy Protection',
                 path: '/bankruptcy-protection',
-                cName: 'feature-link feature-menu-item drop-down-menu-item'
+                cName: 'feature-link feature-menu-item drop-down-menu-item',
+                isSubItem: true,
             },
             {
                 title: 'Waste Management',
-                path: 'waste-management',
-                cName: 'feature-link feature-menu-item drop-down-menu-item'
+                path: '/waste-management',
+                cName: 'feature-link feature-menu-item drop-down-menu-item',
+                isSubItem: true,
             },
             {
-                title: 'Staff ',
-                path: '',
-                cName: 'feature-link feature-menu-item drop-down-menu-item'
+                title: 'Staff And Menu Optimization',
+                path: '/staff-and-menu-optimization',
+                cName: 'feature-link feature-menu-item drop-down-menu-item',
+                isSubItem: true,
             },
         ]
     },

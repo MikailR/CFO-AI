@@ -4,6 +4,7 @@ import DropDownArrow from "../../assets/arrows/DropDownArrow.js";
 
 import Modal from "../Modal/Modal.js";
 import MenuItems from "./MenuItems.js";
+import MenuItem from "./MenuItem/MenuItem.js";
 
 import Popup from "reactjs-popup";
 import { Link } from "react-router-dom";
@@ -76,7 +77,7 @@ class Navbar extends Component {
               this.state.isHamburgerClicked ? "nav-menu active" : "nav-menu"
             }
           >
-            {MenuItems.map((item, index) => {
+            {/* {MenuItems.map((item, index) => {
               if (item.isDropdown) {
                 return (
                   <li className="link-wrapper drop-down" key={index}>
@@ -115,7 +116,7 @@ class Navbar extends Component {
                   </li>
                 );
               } else {
-                return (
+                  return (
                   <li className="link-wrapper" key={index}>
                     <Link
                       to={item.path}
@@ -128,6 +129,16 @@ class Navbar extends Component {
                   </li>
                 );
               }
+            })} */}
+
+            {MenuItems.map((item, index) => {
+              return (
+                <MenuItem
+                  item={item}
+                  key={index}
+                  onHamburgerClick={this.onHamburgerClick}
+                />
+              );
             })}
 
             <Popup

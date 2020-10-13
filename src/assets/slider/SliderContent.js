@@ -8,9 +8,14 @@ const SliderContent = [
     text: {
       headline: "Restaurant Growth On Autopilot",
       paragraph1:
-        "Join 600+ restaurants and pre-register for CFO AI. With actionable insights powered by Artificial Intelligence, benchmarking against your competitors, and recession proof bankruptcy protection, you don't want to wait!",
-      paragraph2:
-        "Restaurants around the world have already started using AI to make more profitable decisions. Be sure to pre-register today so you don't get left behind!",
+        "Benchmark your way to success! By comparing your performance to 600+ peers in our global restaurant community, CFO AI generates actionable insights to:",
+      bullets: [
+        "Maximize efficiency and profitability",
+        "Increase staff productivity",
+        "Automate and improve financial management",
+      ],
+      // paragraph2:
+      //   ":",
       button1: "Pre-Register",
       button2: "View Demo",
     },
@@ -18,11 +23,11 @@ const SliderContent = [
   },
   {
     text: {
-      headline: "Menu Optimization To Maximize Profit",
+      headline: "Operations Made Easy",
       paragraph1:
-        "CFO AI tracks your sales data and customer food wastage to figure out which menu items are the least/most popular and are generating the least/most profit.",
+        "You have enough on your plate! So let CFO AI maximize your operational efficiency. It integrates with your POS and does the math to help prevent wastage, maximize profits, and predict your cash flow.",
       paragraph2:
-        "It uses this to generate lucrative recommendations on price changes, items to drop from the menu, and items to pair in a combo for more purchases and increased profits.",
+        "CFO AI does the technical stuff so you can focus on keeping your customers happy.",
       button1: "Pre-Register",
       button2: "View Demo",
     },
@@ -30,27 +35,27 @@ const SliderContent = [
   },
   {
     text: {
-      headline: "Supply And Inventory Management",
+      headline: "Hosts... Not Order Takers",
       paragraph1:
-        "By tracking metrics like food wastage and sales data, CFO AI manages your inventory on autopilot to make sure you never waste any raw materials or go out of stock in a lunch rush again.",
+        "CFO AI maximizes your customer retention by keeping your staff motivated and productive. It uses POS data to rank their performance and gives them ‘gamified’ incentives to move up the leaderboard.",
       paragraph2:
-        "It predicts the changing demand of different menu items and automatically orders exactly what you need, just in time for when you need it. CFO AI also connects you to the most reliable suppliers to ensure that your order is always fulfilled.",
-      button1: "Pre-Register",
-      button2: "View Demo",
-    },
-    image: robotInventory,
-  },
-  {
-    text: {
-      headline: "Staff Management And Optimization",
-      paragraph1:
-        "CFO AI measures employee performance using data points like customer retention rates and tips, to generate employee rankings and profitable recommendations for staff combinations and scheduling.",
-      paragraph2:
-        "This skyrockets your number of return customers and increases your employee productivity as they work towards boosting their ranking. In other words, it ‘gamifies’ their routine tasks and makes the competition profitable.",
+        "With a motivated staff on deck, your restaurant will steer itself to success.",
       button1: "Pre-Register",
       button2: "View Demo",
     },
     image: robotWaiter,
+  },
+  {
+    text: {
+      headline: "Your Financial Consultant",
+      paragraph1:
+      "No more struggling to make financial decisions. CFO AI tracks your revenues, expenses, customers, inventory, and wastage. It uses this to generate data-driven and easy-to-folow suggestions to boost your profitability.",
+      paragraph2:
+      "Don’t worry about the numbers, focus on your customers!",
+      button1: "Pre-Register",
+      button2: "View Demo",
+    },
+    image: robotInventory,
   },
 ];
 

@@ -24,8 +24,9 @@ const WMDetails = () => {
       </div>
 
       <p className="paragraph">
-        And of course, if you ever decide to opt out of this optional feature,
-        you’ll get back the full amount of your total contributions.
+        We’ve partnered with KTIRO to help restaurants like yours become more
+        profitable and sustainable. By reducing your food wastage, you’ll be
+        increasing your profits and saving the planet at the same time!
       </p>
     </div>
   );

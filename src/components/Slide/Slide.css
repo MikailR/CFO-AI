@@ -24,6 +24,10 @@
   font-weight: 900;
 }
 
+#slide-text .bullet-container {
+  margin-bottom: 1em;
+}
+
 #slide-text .register-button {
   border: 3px solid #fff34b;
   border-radius: 100px;
@@ -34,7 +38,7 @@
   font-size: 16pt;
 
   padding: 8px 30px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: auto;
 }
 
@@ -53,6 +57,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+  #slide-text .header {
+    font-size: 28pt;
+  }
+
+  #slide-text .register-button {
+    margin-top: 0;
+  }
+
   #slide-image {
     margin-top: 40px;
     height: auto;

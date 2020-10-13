@@ -1,6 +1,7 @@
 import React from "react";
 import "./Slide.css";
 
+import BulletPoint from "../BulletPoint/BulletPoint.js";
 import Modal from "../Modal/Modal.js";
 
 import Popup from "reactjs-popup";
@@ -12,7 +13,17 @@ function Slide(props) {
         <div id="slide-text" className="col-xl">
           <h1 className="header">{props.text.headline}</h1>
           <p className="paragraph-normal">{props.text.paragraph1}</p>
-          <p className="paragraph-bold">{props.text.paragraph2}</p>
+
+
+          {!props.text.bullets ? null : (
+            <div className="bullet-container">
+              {props.text.bullets.map((bullet, index) => {
+                return <BulletPoint text={bullet} key={index} color="blue" textColor="white" />
+              })}
+            </div>
+          )}
+
+          {props.text.paragraph2 ? <p className="paragraph-bold">{props.text.paragraph2}</p>: null}
 
           <Popup
             modal
