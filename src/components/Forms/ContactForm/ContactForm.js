@@ -3,11 +3,22 @@ import "./ContactForm.css";
 
 import logo from "../../../assets/logos/logo-img.png";
 
+// Possibly move to back-end when created
+const SubmitGS = (e) =>{
+  const scriptURL = "https://script.google.com/macros/s/AKfycbw84Z8ACNwugufKe6NPv3niQ_BT6W5gEXvYSKHLu_LD0BPRGzg/exec"
+  const form = document.forms['contact-form']
+
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+}
+
 export class ContactForm extends Component {
   render() {
     return (
       <React.Fragment>
-        <form className="contact-form flex-center-column">
+        <form className="contact-form flex-center-column" name="contact-form" onSubmit={SubmitGS}>
           <div id="contact-form-logo">
             <img className="contact-form-logo" src={logo} alt="logo"/>
           </div>
@@ -45,8 +56,6 @@ export class ContactForm extends Component {
             value="Send Message"
           ></input>
         </form>
-
-        {/* Embed Google Sheets Script */}
       </React.Fragment>
     );
   }
