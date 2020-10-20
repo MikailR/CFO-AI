@@ -48,6 +48,7 @@ export class ContactForm extends Component {
             name="contact-question"
             placeholder="Your questions ..."
             rows="5"
+            required
           />
 
           <input

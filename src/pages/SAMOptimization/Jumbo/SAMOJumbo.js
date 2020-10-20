@@ -16,19 +16,17 @@ export class SAMOJumbo extends Component {
             <div id="samo-text" className="col-lg">
               <h1 className="header">Staff And Menu Optimization</h1>
               <p className="paragraph-normal">
-                Great hospitality skyrockets your customer retention, but a
-                Swedish time in motion study found that restaurant employees
-                spend less than 15% of their time entertaining and engaging with
-                customers.
+                A partner in our 600+ restaurant community found that servers
+                spend around 14 minutes with guests. From these 14 minutes, only
+                2 are spent entertaining your guests. The rest occupied with the
+                boring, dreary stuff. CFO AI’s hospitality tech takes care of
+                the routine stuff by having each customer order directly from
+                the kitchen.
               </p>
 
               <p className="paragraph-normal">
-                To combat this inefficiency and maximize your employee
-                productivity, CFO AI tracks both your sales data and your
-                employee performance while on shift. It predicts when your
-                restaurant will be busiest and suggests the best employees and
-                staff-to-table ratios to put on those shifts for amplified
-                profits.
+                Now your staff can focus near 100% of time on providing a warm
+                customer experience that keeps your seats filled.
               </p>
 
               <Popup
@@ -38,14 +36,8 @@ export class SAMOJumbo extends Component {
                 {(close) => <Modal close={close} />}
               </Popup>
             </div>
-            <div
-              id="samo-image"
-              className="col-lg flex-center-row"
-            >
-              <img
-                src={employeeOptimization}
-                className="samo-image"
-              />
+            <div id="samo-image" className="col-lg flex-center-row">
+              <img src={employeeOptimization} className="samo-image" />
             </div>
           </div>
         </div>

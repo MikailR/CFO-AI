@@ -24,9 +24,9 @@ const FeatureContent = [
     text: {
       headline: "Staff and Menu Optimization",
       paragraph1:
-        "CFO AI puts extra weight on hospitality metrics when ranking employees and trains them to engage with customers in a way that maximizes your return rate. With its POS integration, CFO AI also analyzes the performance of different menu items and identifies the most profitable menu changes.",
+        "CFO AI’s hospitality tech energizes and motivates your staff to be the great host that they are. It makes ordering food and booking reservations entirely digital. CFO AI brings out the gracious host in your staff and increases the tables per staff ratio.",
       paragraph2:
-        "Maximize the use of all your restaurant data without having to do the math yourself!",
+        "With CFO AI’s hospitality tech, your motivated staff will steer your restaurant to success!",
       button: "Learn More",
       buttonPath: "staff-and-menu-optimization",
     },

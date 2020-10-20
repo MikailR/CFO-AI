@@ -77,60 +77,6 @@ class Navbar extends Component {
               this.state.isHamburgerClicked ? "nav-menu active" : "nav-menu"
             }
           >
-            {/* {MenuItems.map((item, index) => {
-              if (item.isDropdown) {
-                return (
-                  <li className="link-wrapper drop-down" key={index}>
-                    <div className={item.cName} onClick={this.onDropDownClick}>
-                      {item.title}
-                      <DropDownArrow
-                        className={
-                          this.state.isDropDownOpen
-                            ? "drop-down-arrow active"
-                            : "drop-down-arrow"
-                        }
-                      />
-                    </div>
-                    <ul
-                      className={
-                        this.state.isDropDownOpen
-                          ? "drop-down-menu active"
-                          : "drop-down-menu"
-                      }
-                    >
-                      {item.subItems.map((subItem, index) => {
-                        return (
-                          <li className="link-wrapper" key={index}>
-                            <Link
-                              to={subItem.path}
-                              className={subItem.cName}
-                              onClick={this.closeHamburgerMenu}
-                            >
-                              {subItem.title}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                    <div className="separator"></div>
-                  </li>
-                );
-              } else {
-                  return (
-                  <li className="link-wrapper" key={index}>
-                    <Link
-                      to={item.path}
-                      className={item.cName}
-                      onClick={this.closeHamburgerMenu}
-                    >
-                      {item.title}
-                    </Link>
-                    <div className="separator"></div>
-                  </li>
-                );
-              }
-            })} */}
-
             {MenuItems.map((item, index) => {
               return (
                 <MenuItem
