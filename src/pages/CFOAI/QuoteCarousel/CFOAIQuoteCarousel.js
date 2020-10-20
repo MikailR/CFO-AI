@@ -25,7 +25,7 @@ export class CFOAIQuoteCarousel extends Component {
 
     return (
       <div className="quote-container">
-        <h1 className="header">BDO Canada Highlights</h1>
+        <h1 className="header">BDO 2019 Report Highlights</h1>
         <Slider {...sliderSettings} className="quote-slider">
             {CFOAIQuoteContent.map((quote, index) => {
                 return (

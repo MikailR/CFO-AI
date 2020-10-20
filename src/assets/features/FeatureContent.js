@@ -10,7 +10,7 @@ const FeatureContent = [
     text: {
       headline: "CFO AI",
       paragraph1:
-        "Managing finances is a hassle, let CFO AI take over the process for you. The AI takes care of all your accounting and financial management needs and allows you to access handy reports, graphs and statistics without having to crunch the numbers yourself.",
+        "Managing finances is a hassle, so let CFO AI take over the process for you. The AI takes care of all your accounting and financial management needs and allows you to access handy reports, graphs and statistics without having to crunch the numbers yourself.",
       paragraph2:
         "You don't have to be a financial expert to see your restaurant thrive. Spend your time on what matters most - your restaurant and its customers.",
       button: "Learn More",
@@ -22,15 +22,16 @@ const FeatureContent = [
     reverse: false,
     isLast: false,
     text: {
-      headline: "Bankruptcy Protection",
+      headline: "Staff and Menu Optimization",
       paragraph1:
-        "CFO AI has reinvented insurance to prevent a financial crisis before it even happens. Using a complex array of data points, it predicts when your restaurant is about to go under and qualifies you for micro-financing to make sure that you stay afloat.",
+        "CFO AI puts extra weight on hospitality metrics when ranking employees and trains them to engage with customers in a way that maximizes your return rate. With its POS integration, CFO AI also analyzes the performance of different menu items and identifies the most profitable menu changes.",
       paragraph2:
-        "Insurance to help you avoid bankruptcy rather than dealing with it after the fact.",
+        "Maximize the use of all your restaurant data without having to do the math yourself!",
       button: "Learn More",
-      buttonPath: "bankruptcy-protection",
+      buttonPath: "staff-and-menu-optimization",
     },
-    image: bankruptcyProtection,
+    
+    image: employeeOptimization,
   },
   {
     reverse: true,
@@ -50,15 +51,15 @@ const FeatureContent = [
     reverse: false,
     isLast: true,
     text: {
-      headline: "Staff and Menu Optimization",
+      headline: "Bankruptcy Protection",
       paragraph1:
-        "CFO AI puts extra weight on hospitality metrics when ranking employees and trains them to engage with customers in a way that maximizes your return rate. With its POS integration, CFO AI also analyzes the performance of different menu items and identifies the most profitable menu changes.",
+        "CFO AI has reinvented insurance to prevent a financial crisis before it even happens. Using a complex array of data points, it predicts when your restaurant is about to go under and qualifies you for micro-financing to make sure that you stay afloat.",
       paragraph2:
-        "Maximize the use of all your restaurant data without having to do the math yourself!",
+        "Insurance to help you avoid bankruptcy rather than dealing with it after the fact.",
       button: "Learn More",
-      buttonPath: "staff-and-menu-optimization",
+      buttonPath: "bankruptcy-protection",
     },
-    image: employeeOptimization,
+    image: bankruptcyProtection,
   },
 ];
 

@@ -16,21 +16,21 @@ export class CFOAIJumbo extends Component {
           <div className="row">
             <div id="cfo-ai-text" className="col-lg">
               <h1 className="header">Introducing CFO AI</h1>
-              <p className="paragraph-normal">
+              {/* <p className="paragraph-normal">
                 The one stop software for your restaurant’s financial health and
                 management.
-              </p>
+              </p> */}
 
               <p className="paragraph-normal">
-                It effortlessly integrates with your POS and tracks your sales
-                and transactions to:
+                It benchmarks only your most recent financial performance against relevant peers in our 600+ restaurant community to generate data-driven, actionable insights to:
               </p>
 
               <div className="bullet-container">
-                <BulletPoint text="Generate actionable insights" />
-                <BulletPoint text="Automate your routine tasks" />
-                <BulletPoint text="Rank you against your competitors" />
+                <BulletPoint text="Maximize your profits" />
+                <BulletPoint text="Minimize costly wastage" />
+                <BulletPoint text="Improve key metrics" />
                 <BulletPoint text="Bring you to peak efficiency" />
+
               </div>
 
               <Popup

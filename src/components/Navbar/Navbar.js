@@ -137,6 +137,7 @@ class Navbar extends Component {
                   item={item}
                   key={index}
                   onHamburgerClick={this.onHamburgerClick}
+                  closeHamburgerMenu={this.closeHamburgerMenu}
                 />
               );
             })}
