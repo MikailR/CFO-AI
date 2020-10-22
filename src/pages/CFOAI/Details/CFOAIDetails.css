@@ -23,8 +23,21 @@
 }
 
 .cfo-ai-details .paragraph {
-    text-align: justify;
+    /* text-align: justify; */
     font-size: 16pt;
     color: #313438;
     margin-bottom: 25px;
+}
+
+.cfo-ai-details .screenshot {
+  display: block;
+  height: 500px;
+  margin: 50px auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .cfo-ai-details .screenshot {
+    height: auto;
+    width: 100%;
+  }
 }

@@ -10,9 +10,9 @@ const FeatureContent = [
     text: {
       headline: "CFO AI",
       paragraph1:
-        "Managing finances is a hassle, so let CFO AI take over the process for you. The AI takes care of all your accounting and financial management needs and allows you to access handy reports, graphs and statistics without having to crunch the numbers yourself.",
+        "Driven by a simple benchmark in our 600+ restaurant community, CFO AI puts the power of a multi-unit franchise owner in your hands. It leverages your most recent and relevant sales data to highlight the unintuitive actions that can boost your profits and maximize your efficiency.",
       paragraph2:
-        "You don't have to be a financial expert to see your restaurant thrive. Spend your time on what matters most - your restaurant and its customers.",
+        "CFO AI takes care of the number crunching so you can spend your time on what matters most - your restaurant and its customers.",
       button: "Learn More",
       buttonPath: "cfo-ai",
     },
@@ -22,7 +22,7 @@ const FeatureContent = [
     reverse: false,
     isLast: false,
     text: {
-      headline: "Staff and Menu Optimization",
+      headline: "Hospitality Tech",
       paragraph1:
         "CFO AI’s hospitality tech energizes and motivates your staff to be the great host that they are. It makes ordering food and booking reservations entirely digital. CFO AI brings out the gracious host in your staff and increases the tables per staff ratio.",
       paragraph2:
@@ -39,7 +39,7 @@ const FeatureContent = [
     text: {
       headline: "Waste Management",
       paragraph1:
-        "Stop throwing away money by being a victim of food wastage. We have partnered with Kitro to automate the monitoring of your garbage disposal. Using a camera and scale device on disposal bins, the AI pinpoints the ingredients that are being wasted and provides actionable insights to steer your restaurant back to peak efficiency.",
+        "Stop throwing away money by being a victim of food wastage. CFO AI has made it a top priority to minimize this profit killer. Using a camera and scale device on disposal bins, the AI pinpoints the ingredients that are being wasted and provides actionable insights to steer your restaurant back to peak efficiency.",
       paragraph2:
         "Boost your restaurant's profits by reducing food wastage and saving the planet.",
       button: "Learn More",

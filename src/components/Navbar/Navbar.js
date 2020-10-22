@@ -42,12 +42,6 @@ class Navbar extends Component {
     }));
   };
 
-  onDropDownClick = () => {
-    this.setState((prevState) => ({
-      isDropDownOpen: !prevState.isDropDownOpen,
-    }));
-  };
-
   closeHamburgerMenu = () => {
     this.setState((prevState) => {
       if (prevState.isHamburgerClicked) {
@@ -56,6 +50,19 @@ class Navbar extends Component {
         };
       }
     });
+  };
+
+  onDropDownClick = () => {
+    this.setState((prevState) => ({
+      isDropDownOpen: !prevState.isDropDownOpen,
+    }));
+  };
+
+  closeFullMenu = () => {
+    this.setState({
+      isDropDownOpen: false,
+    });
+    this.closeHamburgerMenu();
   };
 
   render() {
@@ -82,8 +89,10 @@ class Navbar extends Component {
                 <MenuItem
                   item={item}
                   key={index}
-                  onHamburgerClick={this.onHamburgerClick}
-                  closeHamburgerMenu={this.closeHamburgerMenu}
+                  className="link-wrapper"
+                  isDropDownOpen={this.state.isDropDownOpen}
+                  onDropDownClick={this.onDropDownClick}
+                  closeFullMenu={this.closeFullMenu}
                 />
               );
             })}

@@ -14,7 +14,7 @@ export class SAMOJumbo extends Component {
         <div className="container-fluid">
           <div className="row">
             <div id="samo-text" className="col-lg">
-              <h1 className="header">Staff And Menu Optimization</h1>
+              <h1 className="header">Hospitality Tech</h1>
               <p className="paragraph-normal">
                 A partner in our 600+ restaurant community found that servers
                 spend around 14 minutes with guests. From these 14 minutes, only

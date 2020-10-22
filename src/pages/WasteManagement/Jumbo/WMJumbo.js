@@ -17,18 +17,16 @@ export class WMJumbo extends Component {
             <div id="waste-management-text" className="col-lg">
               <h1 className="header">Waste Management</h1>
               <p className="paragraph-normal">
-                We’ve made it a top priority to minimize the wastage in your
-                restaurant. Our partnership with KITRO allows CFO AI to keep
-                track of all foods wasted in your kitchen and by your customers.
+                We’ve made it a top priority to minimize the food wastage in
+                your restaurant. Our modern waste management tech has been
+                designed to pinpoint specific foods that are being wasted in the
+                kitchen and by customers.
               </p>
 
               <p className="paragraph-normal">
-                By combining this data with all other metrics and predictions,
-                CFO AI lets you know the ingredients that customers are throwing
-                away and presents the most profitable and sustainable menu
-                changes. It also optimizes the efficiency of your inventory by
-                predicting when certain menu items will be in higher demand and
-                ordering exactly what’s needed to avoid wastage.
+                Our camera-scale device can be paired with any bin and can
+                generate another dimension of data which can be fed into CFO AI
+                so that even more powerful insights can be generated.
               </p>
 
               <Popup

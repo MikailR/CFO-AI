@@ -31,7 +31,7 @@ function App() {
           path="/staff-and-menu-optimization"
           component={SAMOptimization}
         />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />
       </Switch>
     </Router>

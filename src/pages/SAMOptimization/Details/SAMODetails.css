@@ -24,7 +24,7 @@
   }
   
   .samo-details .paragraph {
-      text-align: justify;
+      /* text-align: justify; */
       font-size: 16pt;
       color: #313438;
       margin-bottom: 25px;

@@ -16,6 +16,7 @@
 
   /* background-color: rgba(0, 9, 80, 0.5); */
   background-color: #000950;
+  max-height: 80px;
 
   transition: all 0.3s ease;
 }
@@ -30,11 +31,8 @@
   height: 35pt;
 }
 
-.navbar-link {
-  margin: 10px 15px;
-}
-
 .logo-link {
+  margin: 10px 15px;
   margin-right: auto;
 }
 
@@ -47,79 +45,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.navbar-menu-item {
-  color: white;
-  font-size: 16pt;
-  font-weight: 500;
-}
-
-.navbar-menu-item:hover {
-  text-decoration: none;
-  cursor: pointer;
-  color: #fff34b;
-  transition: all 0.2 ease-out;
-}
-
-.navbar-menu-item .drop-down-arrow {
-  height: 15px;
-  margin: 0 10px;
-  fill: #fff;
-
-  transition: all 0.3s ease;
-}
-
-.navbar-menu-item:hover .drop-down-arrow {
-  fill: #fff34b !important;
-}
-
-.navbar-menu-item .drop-down-arrow.active {
-  transform: rotate(180deg);
-}
-
-.drop-down-menu {
-  position: absolute;
-  top: 100%;
-
-  background-color: #000950;
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 0 15px;
-  transform: translate(-15px);
-
-  max-height: 0;
-  margin: 0 15px;
-  overflow: hidden;
-
-  list-style-type: none;
-
-  transition: all 0.3s ease;
-}
-
-.drop-down-menu.active {
-  max-height: 300px;
-}
-
-.drop-down-menu-item {
-  display: block;
-  font-size: 14pt;
-  color: white;
-  margin: 10px 0;
-}
-
-.drop-down-menu-item:hover {
-  text-decoration: none;
-  color: #fff34b;
-  cursor: pointer;
-}
-
-.contact-link {
-  padding: 8px 20px;
-  background-color: #ff4365;
-  border-radius: 100px;
 }
 
 .nav-menu .register-button {
@@ -162,7 +87,6 @@
     visibility: hidden;
     opacity: 0;
 
-    /* transition: all 0.2s ease; */
     transition: visibility 0.2s ease;
     transition: opacity 0.2s ease;
   }
@@ -171,7 +95,6 @@
     visibility: visible;
     opacity: 1;
 
-    /* transition: all 0.2s ease; */
     transition: visibility 0.2s ease;
     transition: opacity 0.2s ease;
   }
@@ -180,31 +103,10 @@
     width: 100%;
   }
 
-  .drop-down-menu {
-    position: static;
-
-    padding: 0;
-    transform: none;
-
-    background-color: transparent;
-  }
-
   .nav-menu .separator {
     height: 1px;
     margin: 0 15px;
     background-color: #00acff;
-  }
-
-  .navbar-menu-item {
-    display: block;
-    font-size: 18pt;
-    font-weight: 400;
-    margin: 15px;
-  }
-
-  .contact-link {
-    padding: 0;
-    background-color: transparent;
   }
 
   .nav-menu .register-button {
@@ -222,12 +124,8 @@
     margin: 50px auto;
   }
 
-  .nav-menu .robot {
-    width: 80%;
-    margin: auto;
-  }
-
   .nav-menu .register-button:hover {
+    cursor: pointer;
     color: #fff34b;
   }
 
