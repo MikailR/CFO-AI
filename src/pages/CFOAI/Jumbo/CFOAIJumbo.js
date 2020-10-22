@@ -22,7 +22,7 @@ export class CFOAIJumbo extends Component {
               </p> */}
 
               <p className="paragraph-normal">
-                It benchmarks only your most recent financial performance against relevant peers in our 600+ restaurant community to generate data-driven, actionable insights to:
+                It benchmarks only your most recent business metrics against a virtual set of representative restaurants, created using the key statistics from our restaurant community, to generate data-driven, actionable insights to:
               </p>
 
               <div className="bullet-container">

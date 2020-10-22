@@ -10,7 +10,7 @@ const FeatureContent = [
     text: {
       headline: "CFO AI",
       paragraph1:
-        "Driven by a simple benchmark in our 600+ restaurant community, CFO AI puts the power of a multi-unit franchise owner in your hands. It leverages your most recent and relevant sales data to highlight the unintuitive actions that can boost your profits and maximize your efficiency.",
+        "Driven by the careful use of business metrics from our expanding 600+ restaurant community network, CFO AI is like having the power of the largest multi-unit franchises in your hands. It leverages your most recent and relevant business metrics to highlight the counter-intuitive actions that can boost your profits and maximize your efficiency.",
       paragraph2:
         "CFO AI takes care of the number crunching so you can spend your time on what matters most - your restaurant and its customers.",
       button: "Learn More",

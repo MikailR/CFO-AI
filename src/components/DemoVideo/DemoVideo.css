@@ -1,22 +1,39 @@
 .demo-video-container {
-  margin: 0 100px 100px;
+    width: 100%;
+    margin: 0 auto 100px;
+    margin-bottom: 100px;
 
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+    /* background-color: #555; */
 }
 
-.demo-video-container .demo-video {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.demo-video {
+    height: 75vh;
+    width: 80%;
+    /* margin: 0 150px; */
 }
 
 @media only screen and (max-width: 1200px) {
-    .demo-video-container {
-        margin: 0 30px 100px;
+    .demo-video {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .demo-video {
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .demo-video {
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .demo-video {
+        height: 25vh;
+        width: 100%;
+        margin: 0 30px;
     }
 }

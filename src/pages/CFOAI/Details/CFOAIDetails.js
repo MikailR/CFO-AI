@@ -14,10 +14,10 @@ const CFOAIDetails = () => {
       </h2>
 
       <p className="paragraph">
-        BDO Canada has highlighted the power of benchmarking in identifying
-        areas of strength to be replicated across a multi-unit franchise.
-        Powered by our global restaurant community, CFO AI makes this type of
-        analysis through benchmarking available to all restaurants.
+        BDO Canada has highlighted the positive impact of benchmarking in
+        identifying areas of strength to be replicated across a multi-unit
+        franchise. Powered by our global restaurant community, CFO AI makes this
+        type of 'analysis through benchmarking' available to all restaurants.
       </p>
 
       <p className="paragraph">

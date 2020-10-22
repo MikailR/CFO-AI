@@ -10,7 +10,7 @@ export default function DemoVideo() {
         className="demo-video"
         src="https://www.youtube.com/embed/rvLrWYl8N-o"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
     </div>
