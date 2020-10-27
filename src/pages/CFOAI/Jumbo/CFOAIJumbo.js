@@ -22,15 +22,17 @@ export class CFOAIJumbo extends Component {
               </p> */}
 
               <p className="paragraph-normal">
-                It benchmarks only your most recent business metrics against a virtual set of representative restaurants, created using the key statistics from our restaurant community, to generate data-driven, actionable insights to:
+                It uses key statistics from our restaurant community to
+                create a virtual set of representative restaurants. This virtual
+                set can then benchmark your most recent business metrics to
+                generate actionable insights that:
               </p>
 
               <div className="bullet-container">
-                <BulletPoint text="Maximize your profits" />
-                <BulletPoint text="Minimize costly wastage" />
-                <BulletPoint text="Improve key metrics" />
+                <BulletPoint text="Increase profit per menu item" />
+                <BulletPoint text="Reduce wastage per ingredient" />
+                <BulletPoint text="Improve staff productivity" />
                 <BulletPoint text="Bring you to peak efficiency" />
-
               </div>
 
               <Popup

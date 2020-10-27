@@ -10,7 +10,7 @@ const FeatureContent = [
     text: {
       headline: "CFO AI",
       paragraph1:
-        "Driven by the careful use of business metrics from our expanding 600+ restaurant community network, CFO AI is like having the power of the largest multi-unit franchises in your hands. It leverages your most recent and relevant business metrics to highlight the counter-intuitive actions that can boost your profits and maximize your efficiency.",
+        "Driven by the careful use of business metrics from our expanding 600+ restaurant community network, CFO AI puts insights similar to those of large multi-unit franchises within your grasp. It leverages your most recent and relevant business metrics to highlight the counter-intuitive actions that can boost your profits and maximize your efficiency.",
       paragraph2:
         "CFO AI takes care of the number crunching so you can spend your time on what matters most - your restaurant and its customers.",
       button: "Learn More",
@@ -24,7 +24,7 @@ const FeatureContent = [
     text: {
       headline: "Hospitality Tech",
       paragraph1:
-        "CFO AI’s hospitality tech energizes and motivates your staff to be the great host that they are. It makes ordering food and booking reservations entirely digital. CFO AI brings out the gracious host in your staff and increases the tables per staff ratio.",
+        "CFO AI’s hospitality tech energizes and motivates your staff to be the great hosts that they are. It makes ordering food and booking reservations entirely digital. CFO AI brings out the gracious host in your staff and increases the tables per staff ratio.",
       paragraph2:
         "With CFO AI’s hospitality tech, your motivated staff will steer your restaurant to success!",
       button: "Learn More",
@@ -39,7 +39,7 @@ const FeatureContent = [
     text: {
       headline: "Waste Management",
       paragraph1:
-        "Stop throwing away money by being a victim of food wastage. CFO AI has made it a top priority to minimize this profit killer. Using a camera and scale device on disposal bins, the AI pinpoints the ingredients that are being wasted and provides actionable insights to steer your restaurant back to peak efficiency.",
+        "Stop throwing away money by being a victim of food wastage. CFO AI has made it a top priority to minimize this profit killer. Using financial metrics and image recognition over your waste bins, the AI pinpoints the ingredients that are being wasted and provides actionable insights to steer your restaurant back to peak efficiency.",
       paragraph2:
         "Boost your restaurant's profits by reducing food wastage and saving the planet.",
       button: "Learn More",
@@ -53,7 +53,7 @@ const FeatureContent = [
     text: {
       headline: "Bankruptcy Protection",
       paragraph1:
-        "CFO AI has reinvented insurance to prevent a financial crisis before it even happens. Using a complex array of data points, it predicts when your restaurant is about to go under and qualifies you for micro-financing to make sure that you stay afloat.",
+        "CFO AI enables a new and innovative type of business disruption insurance. CFO AI can identify when your restaurant’s financial future is in peril. CFO AI also determines the necessary changes to avoid bankruptcy, and may provide micro-financing.",
       paragraph2:
         "Insurance to help you avoid bankruptcy rather than dealing with it after the fact.",
       button: "Learn More",

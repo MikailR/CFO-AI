@@ -35,6 +35,12 @@
   margin: 50px auto;
 }
 
+.cfo-ai-details .network-effect {
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+}
+
 @media only screen and (max-width: 992px) {
   .cfo-ai-details .screenshot {
     height: auto;

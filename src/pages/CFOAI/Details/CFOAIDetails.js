@@ -1,6 +1,7 @@
 import React from "react";
 import "./CFOAIDetails.css";
 import screenshot from "../../../assets/cfo-ai/dashboard-screenshot.png";
+import networkEffect from "../../../assets/cfo-ai/network-effect.png";
 
 import BulletPoint from "../../../components/BulletPoint/BulletPoint.js";
 
@@ -14,20 +15,23 @@ const CFOAIDetails = () => {
       </h2>
 
       <p className="paragraph">
-        BDO Canada has highlighted the positive impact of benchmarking in
-        identifying areas of strength to be replicated across a multi-unit
-        franchise. Powered by our global restaurant community, CFO AI makes this
-        type of 'analysis through benchmarking' available to all restaurants.
+        The 2019 BDO Report highlighted the positive impact on profitability
+        that multi-unit franchises enjoy by benchmarking across their network to
+        identify operational improvements for each franchise. Powered by our
+        global restaurant community, CFO AI provides this ‘profit boost through
+        benchmarking’ to all of its member restaurants.
       </p>
 
       <p className="paragraph">
-        For the first time, you’ll be able to compare your most important
-        metrics to every restaurant in our 600+ global network with CFO AI’s
-        beautiful and customizable data-dashboard.
+        For the first time, you will be able to learn why your performance
+        metrics are better or worse than other restaurants. You will be guided
+        on what steps to take to improve by the user-friendly and easy-to-follow
+        CFO AI.
       </p>
 
       <p className="paragraph">
-        It highlights the metrics that matter the most such as:
+        CFO AI dashboards provide recommendations and explain the impact on key
+        metrics such as:
       </p>
 
       <div className="bullet-container">
@@ -50,47 +54,47 @@ const CFOAIDetails = () => {
       />
 
       <p className="paragraph">
-        You can interpret this data in any way you wish, but to save you the
-        time from doing a bunch of complicated math, CFO AI goes a step further
-        to highlight the unintuitive. It uses these metrics and your benchmark
-        to generate recommendations that boost your profits and reduce your
-        wastage.
+        CFO AI simplifies the complexity of your restaurant’s financial
+        management into “green button” moments so you can easily interpret the
+        purpose and impact of any recommendation.
       </p>
 
       <p className="paragraph">
-        For example, CFO AI might realize that certain menu items are
-        underperforming and recommend that you remove that item from the menu.
-        It may also find two menu items that appear to be complementary and
-        suggest that you pair them in a combo. The coolest part is that these
-        menu changes can easily be phased in with CFO AI's hospitality tech.
+        Many restaurant owners know which menu items make the most sales. But
+        best-selling does not always mean it is the most profitable. CFO AI
+        helps you understand what matters most to profitability.
       </p>
 
       <p className="paragraph">
-        CFO AI also monitors the fluctuating demand of each menu ingredient to
-        reliably automate your inventory management. It forecasts the future
-        demand for each ingredient and gives you the option to automatically
-        order the exact quantities needed to reduce inventory wastage and still
-        fulfill every customer’s order.
+        Depending on the level of digital integration with your restaurant, CFO
+        AI may be applied to automate your inventory management.
       </p>
 
       <p className="paragraph">
-        The best part is that it all works by using only your most recent and
-        relevant restaurant data. CFO AI only monitors this and last week’s data
-        without ever storing it.
+        CFO AI enables credit and financing options because the focus is only on
+        recent and relevant business metrics. Traditional credit scoring is too
+        harsh and ineffective because what matters most is how the entire
+        marketplace is performing and sharing insights so that all restaurants
+        are thriving.
       </p>
 
-      <p className="paragraph">
-        In other words, CFO AI does the complicated math to grow your restaurant
-        while keeping your data safe and secure! It crunches the numbers in real
-        time and on autopilot to highlight your most important metrics and
-        generate profitable suggestions for menu changes, staff scheduling, food
-        wastage, and more.
-      </p>
+      <img
+        src={networkEffect}
+        className="network-effect"
+        alt="Smaller fishes coming together to capture a big fish"
+      />
 
       <p className="paragraph">
+        In other words, CFO AI does the complicated math to improve your
+        restaurant along with the entire community of restaurants. CFO AI is a
+        shared resource for the community, so no personally identifiable
+        information is ever stored on the platform.
+      </p>
+
+      {/* <p className="paragraph">
         Also, CFO AI’s recommendations are completely optional so you can decide
         whether or not to implement them by simply clicking a button.
-      </p>
+      </p> */}
 
       <p className="paragraph">
         Take a look at our demo video below to see some more of what CFO AI can

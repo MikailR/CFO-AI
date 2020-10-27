@@ -11,8 +11,8 @@ const SliderContent = [
         "Benchmark your way to success! By comparing your performance to 600+ peers in our global restaurant community, CFO AI generates actionable insights to:",
       bullets: [
         "Maximize efficiency and profitability",
-        "Increase staff productivity",
-        "Automate and improve financial management",
+        "Improve the hospitality of your staff",
+        "Access credit and insurance",
       ],
       button1: "Pre-Register",
       button2: "View Demo",
