@@ -16,12 +16,17 @@ export class BPJumbo extends Component {
             <div id="bankruptcy-protection-text" className="col-lg">
               <h1 className="header">Bankruptcy Prevention</h1>
               <p className="paragraph-normal">
-                CFO AI introduces a new type of insurance, designed to steer
-                your restaurant back onto the path of success when times get
-                rough. Instead of waiting for a crisis to happen, CFO AI
-                predicts when your restaurant is about to go under and
-                automatically qualifies you for micro-financing to ensure that
-                you stay afloat.
+                CFO AI introduces a new type financial management service
+                designed to steer your restaurant back onto the path of success
+                when times get rough.
+              </p>
+              <p className="paragraph-normal">
+                Instead of you unknowingly falling into a bankruptcy, CFO AI is
+                continuously monitoring whether your restaurant has started
+                trending towards financial ruin. Once a dangerous trend is
+                spotted, CFO AI automatically determines corrective action and
+                qualifies you for micro-financing with the funds to redress the
+                situation.
               </p>
 
               <Popup
@@ -31,8 +36,14 @@ export class BPJumbo extends Component {
                 {(close) => <Modal close={close} />}
               </Popup>
             </div>
-            <div id="bankruptcy-protection-image" className="col-lg flex-center-row">
-              <img src={bankruptcyProtection} className="bankruptcy-protection-image" />
+            <div
+              id="bankruptcy-protection-image"
+              className="col-lg flex-center-row"
+            >
+              <img
+                src={bankruptcyProtection}
+                className="bankruptcy-protection-image"
+              />
             </div>
           </div>
         </div>

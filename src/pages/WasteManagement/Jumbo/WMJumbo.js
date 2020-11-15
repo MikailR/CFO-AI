@@ -17,16 +17,18 @@ export class WMJumbo extends Component {
             <div id="waste-management-text" className="col-lg">
               <h1 className="header">Waste Management</h1>
               <p className="paragraph-normal">
-                We’ve made it a top priority to minimize the food wastage in
-                your restaurant. Our modern waste management tech has been
-                designed to pinpoint specific foods that are being wasted in the
-                kitchen and by customers.
+                Food waste greatly impacts profitability. So, we have made
+                minimizing the food wastage in your restaurant a top priority.
+                From your menu, POS system reports and inventory order records,
+                we identify where your wastage can be reduced.
               </p>
 
               <p className="paragraph-normal">
-                Our camera-scale device can be paired with any bin and can
-                generate another dimension of data which can be fed into CFO AI
-                so that even more powerful insights can be generated.
+                We may also introduce you to waste management tech designed to
+                pinpoint specific foods that are being wasted in the kitchen and
+                by your customers. A simple camera and scale installed on your
+                bins will generate insights for reducing inventory orders and
+                menu item recipe changes.
               </p>
 
               <Popup

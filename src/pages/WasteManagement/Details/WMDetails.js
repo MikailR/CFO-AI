@@ -4,13 +4,7 @@ import "./WMDetails.css";
 const WMDetails = () => {
   return (
     <div className="waste-management-details">
-      <h2 className="header">Here's how it works</h2>
-
-      <p className="paragraph">
-        Our waste management tech determines the weight and identity of every
-        food item and ingredient that is disposed of in the bins at your
-        restaurant.
-      </p>
+      <h2 className="header">Here's how it works</h2>\
 
       <p className="paragraph">
         CFO AI quickly processes this information and elegantly displays your
