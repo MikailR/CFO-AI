@@ -1,15 +1,15 @@
 .demo-video-container {
-    width: 100%;
-    margin: 0 auto 100px;
-    margin-bottom: 100px;
+    /* width: 100%; */
+    /* margin: 0 auto 100px; */
+    /* margin-bottom: 100px; */
 
-    /* background-color: #555; */
+    background-color: #555;
 }
 
 .demo-video {
     height: 75vh;
     width: 80%;
-    /* margin: 0 150px; */
+    margin: 0 auto 100px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -33,7 +33,11 @@
 @media only screen and (max-width: 576px) {
     .demo-video {
         height: 25vh;
-        width: 100%;
-        margin: 0 30px;
+        width: 85%;
+        /* margin: 0 30px; */
     }
+}
+
+.demo-video-player:focus {
+    outline: none !important;
 }
