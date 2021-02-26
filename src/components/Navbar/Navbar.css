@@ -122,12 +122,14 @@
   }
 
   .nav-menu .register-button {
-    background-color: #ff4365;
+    /* background-color: #ff4365; */
+    background-color: #00a3e3;
     margin: 20px auto;
   }
 
   .nav-menu .demo-link-resp {
-    background-color: #00a3e3;
+    /* background-color: #00a3e3; */
+    background-color: #ff4365;
     margin: 50px auto 0;
   }
 

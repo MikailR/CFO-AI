@@ -72,17 +72,20 @@
 
 .demo-link {
   padding: 8px 20px;
-  background-color: #00a3e3;
+  /* background-color: #00a3e3; */
+  background-color: #ff4365;
   border-radius: 100px;
 }
 
 .contact-link {
   padding: 8px 20px;
-  background-color: #ff4365;
+  /* background-color: #ff4365; */
+  background-color: #00a3e3;
   border-radius: 100px;
 }
 
-@media only screen and (min-width: 992px) {
+/* TODO: Figure out why I put the media query in the first place */
+/* @media only screen and (min-width: 992px) { */
   .navbar-menu-item:hover,
   .drop-down-menu-item:hover {
     color: #fff34b !important;
@@ -91,7 +94,7 @@
   .navbar-menu-item:hover .drop-down-arrow {
     fill: #fff34b !important;
   }
-}
+/* } */
 
 @media only screen and (max-width: 992px) {
   .drop-down-menu {
@@ -110,11 +113,11 @@
     margin: 15px;
   }
 
-  .demo-link {
+  .nav-menu .demo-link {
     display: none;
   }
 
-  .contact-link {
+  .nav-menu .contact-link {
     padding: 0;
     background-color: transparent;
   }

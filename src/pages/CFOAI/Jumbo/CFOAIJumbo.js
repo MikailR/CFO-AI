@@ -22,10 +22,10 @@ export class CFOAIJumbo extends Component {
               </p> */}
 
               <p className="paragraph-normal">
-                It uses key statistics from our restaurant community to
-                create a virtual set of representative restaurants. This virtual
-                set can then benchmark your most recent business metrics to
-                generate actionable insights that:
+                It uses key statistics from our restaurant community to create a
+                virtual set of representative restaurants. This virtual set can
+                then benchmark your most recent business metrics to generate
+                actionable insights that:
               </p>
 
               <div className="bullet-container">
@@ -35,12 +35,17 @@ export class CFOAIJumbo extends Component {
                 <BulletPoint text="Bring you to peak efficiency" />
               </div>
 
-              <Popup
-                modal
-                trigger={<a className="register-button">Pre-Register</a>}
-              >
-                {(close) => <Modal close={close} />}
-              </Popup>
+              <div className="button-container">
+                <a href="#" className="demo-link">
+                  Try Demo
+                </a>
+                <Popup
+                  modal
+                  trigger={<a className="register-button">Pre-Register</a>}
+                >
+                  {(close) => <Modal close={close} />}
+                </Popup>
+              </div>
             </div>
             <div id="cfo-ai-image" className="col-lg flex-center-row">
               <img src={robotCFO} className="cfo-ai-image" />

@@ -43,6 +43,28 @@
   margin-bottom: 1em;
 }
 
+#samo-text .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: -15px;
+}
+
+#samo-text .demo-link {
+  background-color: #ff4365;
+  border-radius: 100px;
+  color: #fff;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16pt;
+
+  padding: 8px 30px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
 #samo-text .register-button {
   background-color: #00acff;
   border-radius: 100px;
@@ -53,11 +75,10 @@
   font-size: 16pt;
 
   padding: 8px 30px;
-  margin-top: 10px;
-  margin-right: auto;
+  margin-bottom: 15px;
 }
 
-#samo-text .register-button:hover {
+#samo-text .register-button:hover, #samo-text .demo-link:hover {
   text-decoration: none;
   cursor: pointer;
   color: #fff34b;

@@ -29,12 +29,15 @@ export class SAMOJumbo extends Component {
                 customer experience that keeps your seats filled.
               </p>
 
-              <Popup
-                modal
-                trigger={<a className="register-button">Pre-Register</a>}
-              >
-                {(close) => <Modal close={close} />}
-              </Popup>
+              <div className="button-container">
+                <a href="#" className="demo-link">Try Demo</a>
+                <Popup 
+                  modal
+                  trigger={<a className="register-button">Pre-Register</a>}
+                >
+                  {(close) => <Modal close={close} />}
+                </Popup>
+              </div>
             </div>
             <div id="samo-image" className="col-lg flex-center-row">
               <img src={employeeOptimization} className="samo-image" />

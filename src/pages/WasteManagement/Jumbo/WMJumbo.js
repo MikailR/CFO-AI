@@ -31,12 +31,17 @@ export class WMJumbo extends Component {
                 menu item recipe changes.
               </p>
 
-              <Popup
-                modal
-                trigger={<a className="register-button">Pre-Register</a>}
-              >
-                {(close) => <Modal close={close} />}
-              </Popup>
+              <div className="button-container">
+                <a href="#" className="demo-link">
+                  Try Demo
+                </a>
+                <Popup
+                  modal
+                  trigger={<a className="register-button">Pre-Register</a>}
+                >
+                  {(close) => <Modal close={close} />}
+                </Popup>
+              </div>
             </div>
             <div id="waste-management-image" className="col-lg flex-center-row">
               <img src={wasteManagement} className="waste-management-image" />
