@@ -97,7 +97,7 @@ class Navbar extends Component {
               );
             })}
 
-            <a href="https://demo.cfo-ai.com/" className="navbar-menu-item demo-link-resp">View Demo</a>
+            <a href="https://demo.cfo-ai.com/" className="navbar-menu-item demo-link-resp">Try Demo</a>
 
             {/* For hamburger menu */}
             <Popup

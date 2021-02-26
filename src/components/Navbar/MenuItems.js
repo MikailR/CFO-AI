@@ -42,7 +42,7 @@ const MenuItems = [
     ],
   },
   {
-    title: "View Demo",
+    title: "Try Demo",
     path: "https://demo.cfo-ai.com/",
     cName: "navbar-menu-item demo-link",
     isDropdown: false,

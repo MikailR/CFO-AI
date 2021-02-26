@@ -2,6 +2,8 @@
     height: 75vh;
     width: 80%;
     margin: 0 auto 100px;
+    /* BC based on video bc */
+    background-color: #4357a0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -26,7 +28,6 @@
     .demo-video {
         height: 25vh;
         width: 85%;
-        /* margin: 0 30px; */
     }
 }
 
