@@ -7,6 +7,7 @@ import logo from "../../assets/thumbnail/thumbnail.png";
 export default function DemoVideo() {
   return (
     <div className="demo-video">
+      {/* Original youtube video */}
       {/* <iframe
         // width="560"
         // height="315"

@@ -1,11 +1,3 @@
-.demo-video-container {
-    /* width: 100%; */
-    /* margin: 0 auto 100px; */
-    /* margin-bottom: 100px; */
-
-    background-color: #555;
-}
-
 .demo-video {
     height: 75vh;
     width: 80%;
@@ -38,6 +30,6 @@
     }
 }
 
-.demo-video-player:focus {
+.demo-video-player *:focus {
     outline: none !important;
 }
