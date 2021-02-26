@@ -70,6 +70,12 @@
   color: #fff34b;
 }
 
+.demo-link {
+  padding: 8px 20px;
+  background-color: #00a3e3;
+  border-radius: 100px;
+}
+
 .contact-link {
   padding: 8px 20px;
   background-color: #ff4365;
@@ -102,6 +108,10 @@
     font-size: 18pt;
     font-weight: 400;
     margin: 15px;
+  }
+
+  .demo-link {
+    display: none;
   }
 
   .contact-link {

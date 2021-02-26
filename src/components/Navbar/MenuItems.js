@@ -42,6 +42,13 @@ const MenuItems = [
     ],
   },
   {
+    title: "View Demo",
+    path: "https://demo.cfo-ai.com/",
+    cName: "navbar-menu-item demo-link",
+    isDropdown: false,
+    isExternal: true,
+  },
+  {
     title: "Contact Us",
     path: "/contact",
     cName: "navbar-menu-item contact-link",

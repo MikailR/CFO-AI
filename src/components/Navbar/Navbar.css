@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-.nav-menu .register-button {
+.nav-menu .register-button, .nav-menu .demo-link-resp {
   display: none;
 }
 
@@ -109,22 +109,29 @@
     background-color: #00acff;
   }
 
-  .nav-menu .register-button {
+  .nav-menu .register-button, .nav-menu .demo-link-resp {
     display: block;
     border-radius: 100px;
     color: white;
-
-    background-color: #ff4365;
 
     text-decoration: none;
     font-weight: 700;
     font-size: 16pt;
 
     padding: 8px 30px;
-    margin: 50px auto;
   }
 
-  .nav-menu .register-button:hover {
+  .nav-menu .register-button {
+    background-color: #ff4365;
+    margin: 20px auto;
+  }
+
+  .nav-menu .demo-link-resp {
+    background-color: #00a3e3;
+    margin: 50px auto 0;
+  }
+
+  .nav-menu .register-button:hover, .nav-menu .demo-link-resp:hover {
     cursor: pointer;
     color: #fff34b;
   }

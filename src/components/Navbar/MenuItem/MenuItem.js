@@ -7,29 +7,36 @@ import { NavLink } from "react-router-dom";
 export class MenuItem extends Component {
   render() {
     const isDropdown = this.props.item.isDropdown;
+    const isExternal = this.props.item.isExternal;
 
     return (
       <li className={this.props.className}>
-        <NavLink
-          exact
-          to={this.props.item.path}
-          className={this.props.item.cName}
-          activeClassName={"nav-link-active"}
-          onClick={
-            isDropdown ? this.props.onDropDownClick : this.props.closeFullMenu
-          }
-        >
-          {this.props.item.title}
-          {isDropdown ? (
-            <DropDownArrow
-              className={
-                this.props.isDropDownOpen
-                  ? "drop-down-arrow active"
-                  : "drop-down-arrow"
-              }
-            />
-          ) : null}
-        </NavLink>
+        {isExternal ? (
+          <a href={this.props.item.path} className={this.props.item.cName}>
+            {this.props.item.title}
+          </a>
+        ) : (
+          <NavLink
+            exact
+            to={this.props.item.path}
+            className={this.props.item.cName}
+            activeClassName={"nav-link-active"}
+            onClick={
+              isDropdown ? this.props.onDropDownClick : this.props.closeFullMenu
+            }
+          >
+            {this.props.item.title}
+            {isDropdown ? (
+              <DropDownArrow
+                className={
+                  this.props.isDropDownOpen
+                    ? "drop-down-arrow active"
+                    : "drop-down-arrow"
+                }
+              />
+            ) : null}
+          </NavLink>
+        )}
 
         {isDropdown ? (
           <ul

@@ -97,8 +97,11 @@ class Navbar extends Component {
               );
             })}
 
+            <a href="https://demo.cfo-ai.com/" className="navbar-menu-item demo-link-resp">View Demo</a>
+
+            {/* For hamburger menu */}
             <Popup
-              modal
+              modal 
               trigger={<a className="register-button">Pre-Register</a>}
             >
               {(close) => <Modal close={close} />}
