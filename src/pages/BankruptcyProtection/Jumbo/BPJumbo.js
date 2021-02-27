@@ -30,7 +30,7 @@ export class BPJumbo extends Component {
               </p>
 
               <div className="button-container">
-                <a href="#" className="demo-link">
+                <a href="https://demo.cfo-ai.com/" className="demo-link">
                   Try Demo
                 </a>
                 <Popup

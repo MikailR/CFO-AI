@@ -30,7 +30,7 @@ export class SAMOJumbo extends Component {
               </p>
 
               <div className="button-container">
-                <a href="#" className="demo-link">Try Demo</a>
+                <a href="https://demo.cfo-ai.com/" className="demo-link">Try Demo</a>
                 <Popup 
                   modal
                   trigger={<a className="register-button">Pre-Register</a>}
