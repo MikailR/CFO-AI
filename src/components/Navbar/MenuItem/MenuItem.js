@@ -33,10 +33,10 @@ export class MenuItem extends Component {
           <a
             href={this.props.item.path}
             className={this.props.item.cName}
-            onClick={() => this.handleLangChange(this.props.item.title)}
+            onClick={() => this.handleLangChange(this.props.item.id)}
           >
             {this.props.item.flag}
-            <span>{this.props.item.title}</span>
+            <span>{this.props.item.title[this.props.lang]}</span>
           </a>
         ) : (
           <NavLink
@@ -52,7 +52,7 @@ export class MenuItem extends Component {
           >
             {this.props.item.isLangPicker
               ? this.getFlag()
-              : this.props.item.title}
+              : this.props.item.title[this.props.lang]}
 
             {isDropdown ? (
               <DropDownArrow
@@ -81,6 +81,7 @@ export class MenuItem extends Component {
                   key={index}
                   closeFullMenu={this.props.closeFullMenu}
                   handleLangChange={this.props.handleLangChange}
+                  lang={this.props.lang}
                 />
               );
             })}
