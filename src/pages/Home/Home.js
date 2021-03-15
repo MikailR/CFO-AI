@@ -17,7 +17,7 @@ import Slider from "react-slick";
 export class Home extends Component {
   state = {
     mounted: false,
-    sliderContent: [],
+    sliderContent: {},
     featureContent: [],
   };
 
@@ -46,9 +46,12 @@ export class Home extends Component {
         <div className="home">
           <div className="slider-background">
             <Slider {...sliderSettings} className="slider">
-              {this.state.sliderContent.map((slide, index) => {
-                return <Slide {...slide} key={index} />;
-              })}
+              {this.state.sliderContent[this.props.lang] &&
+                this.state.sliderContent[this.props.lang].map(
+                  (slide, index) => {
+                    return <Slide {...slide} key={index} />;
+                  }
+                )}
             </Slider>
           </div>
 
