@@ -1,3 +1,7 @@
+import React from "react";
+import { ReactComponent as English } from "../../assets/flags/united-kingdom.svg";
+import { ReactComponent as Mandarin } from "../../assets/flags/china.svg";
+
 const MenuItems = [
   {
     title: "Home",
@@ -10,6 +14,7 @@ const MenuItems = [
     path: "#",
     cName: "navbar-menu-item features-link",
     isDropdown: true,
+    dropdownId: "features",
     subItems: [
       {
         title: "CFO AI",
@@ -53,6 +58,33 @@ const MenuItems = [
     path: "/contact",
     cName: "navbar-menu-item contact-link",
     isDropdown: false,
+  },
+  {
+    title: "Lang",
+    path: "#",
+    cName: "navbar-menu-item lang-link",
+    isDropdown: true,
+    dropdownId: "lang",
+    subItems: [
+      {
+        title: "English",
+        flag: <English />,
+        path: "#",
+        cName: "drop-down-menu-item",
+        isSubItem: true,
+        isDropdown: false,
+        isExternal: true,
+      },
+      {
+        title: "Mandarin",
+        flag: <Mandarin />,
+        path: "#",
+        cName: "drop-down-menu-item",
+        isSubItem: true,
+        isDropdown: false,
+        isExternal: true,
+      },
+    ],
   },
 ];
 

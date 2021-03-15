@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import logo from "./assets/logos/logo-light.png";
@@ -16,6 +16,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.js";
 
 function App() {
+  // const [lang, setLang] = useState("en");
+
   return (
     <Router>
       <ScrollToTop />

@@ -5,7 +5,7 @@
   margin: 0 15px;
 }
 
-.features-link.nav-link-active {
+.features-link.nav-link-active, .lang-link.nav-link-active {
   color: #fff !important;
 }
 
@@ -54,16 +54,25 @@
 }
 
 .drop-down-menu-item {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 14pt;
   color: white;
   margin: 10px 0;
 }
 
+.drop-down-menu-item span {
+  margin-left: 8px;
+}
+
 .drop-down-menu-item:hover {
   text-decoration: none;
-  color: white;
   cursor: pointer;
+}
+
+a svg {
+  height: 20px;
+  width: 20px;
 }
 
 .nav-link-active {

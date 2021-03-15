@@ -13,7 +13,8 @@ export class MenuItem extends Component {
       <li className={this.props.className}>
         {isExternal ? (
           <a href={this.props.item.path} className={this.props.item.cName}>
-            {this.props.item.title}
+            {this.props.item.flag}
+            <span>{this.props.item.title}</span>
           </a>
         ) : (
           <NavLink
@@ -22,14 +23,16 @@ export class MenuItem extends Component {
             className={this.props.item.cName}
             activeClassName={"nav-link-active"}
             onClick={
-              isDropdown ? this.props.onDropDownClick : this.props.closeFullMenu
+              isDropdown
+                ? () => this.props.onDropDownClick(this.props.item.dropdownId)
+                : this.props.closeFullMenu
             }
           >
             {this.props.item.title}
             {isDropdown ? (
               <DropDownArrow
                 className={
-                  this.props.isDropDownOpen
+                  this.props.isDropDownOpen()
                     ? "drop-down-arrow active"
                     : "drop-down-arrow"
                 }
@@ -41,7 +44,7 @@ export class MenuItem extends Component {
         {isDropdown ? (
           <ul
             className={
-              this.props.isDropDownOpen
+              this.props.isDropDownOpen()
                 ? "drop-down-menu active"
                 : "drop-down-menu"
             }
@@ -58,7 +61,9 @@ export class MenuItem extends Component {
           </ul>
         ) : null}
 
-        {this.props.item.isSubItem ? null : <div className="separator"></div>}
+        {this.props.item.isSubItem || isExternal ? null : (
+          <div className="separator"></div>
+        )}
       </li>
     );
   }

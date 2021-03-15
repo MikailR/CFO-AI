@@ -14,6 +14,9 @@ class Navbar extends Component {
     isHamburgerClicked: false,
     isDropDownOpen: false,
     isScrolled: false,
+
+    isFeatureDropdownOpen: false,
+    isLangDropdownOpen: false,
   };
 
   componentDidMount() {
@@ -52,15 +55,22 @@ class Navbar extends Component {
     });
   };
 
-  onDropDownClick = () => {
-    this.setState((prevState) => ({
-      isDropDownOpen: !prevState.isDropDownOpen,
-    }));
+  onDropDownClick = (dropdownId) => {
+    if (dropdownId === "features") {
+      this.setState((prevState) => ({
+        isFeatureDropdownOpen: !prevState.isFeatureDropdownOpen,
+      }));
+    } else if (dropdownId === "lang") {
+      this.setState((prevState) => ({
+        isLangDropdownOpen: !prevState.isLangDropdownOpen,
+      }));
+    }
   };
 
   closeFullMenu = () => {
     this.setState({
-      isDropDownOpen: false,
+      isFeatureDropdownOpen: false,
+      isLangDropdownOpen: false,
     });
     this.closeHamburgerMenu();
   };
@@ -90,18 +100,32 @@ class Navbar extends Component {
                   item={item}
                   key={index}
                   className="link-wrapper"
-                  isDropDownOpen={this.state.isDropDownOpen}
+                  isDropDownOpen={() => {
+                    if (item.dropdownId === "features") {
+                      return this.state.isFeatureDropdownOpen;
+                    } else if (item.dropdownId === "lang") {
+                      return this.state.isLangDropdownOpen;
+                    } else {
+                      return false;
+                    }
+                  }}
                   onDropDownClick={this.onDropDownClick}
                   closeFullMenu={this.closeFullMenu}
                 />
               );
             })}
 
-            <a href="https://demo.cfo-ai.com/" className="navbar-menu-item demo-link-resp">Try Demo</a>
+            {/* For hamburger menu */}
+            <a
+              href="https://demo.cfo-ai.com/"
+              className="navbar-menu-item demo-link-resp"
+            >
+              Try Demo
+            </a>
 
             {/* For hamburger menu */}
             <Popup
-              modal 
+              modal
               trigger={<a className="register-button">Pre-Register</a>}
             >
               {(close) => <Modal close={close} />}
