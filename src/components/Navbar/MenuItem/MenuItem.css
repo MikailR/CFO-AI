@@ -2,7 +2,7 @@
   color: white;
   font-size: 16pt;
   font-weight: 500;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .features-link.nav-link-active, .lang-link.nav-link-active {
@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 0 15px;
+  padding: 0 10px;
   transform: translate(-15px);
 
   max-height: 0;

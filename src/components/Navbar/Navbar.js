@@ -12,7 +12,6 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   state = {
     isHamburgerClicked: false,
-    isDropDownOpen: false,
     isScrolled: false,
 
     isFeatureDropdownOpen: false,
@@ -111,6 +110,8 @@ class Navbar extends Component {
                   }}
                   onDropDownClick={this.onDropDownClick}
                   closeFullMenu={this.closeFullMenu}
+                  handleLangChange={this.props.handleLangChange}
+                  lang={this.props.lang}
                 />
               );
             })}

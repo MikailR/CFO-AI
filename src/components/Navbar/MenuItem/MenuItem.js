@@ -5,6 +5,24 @@ import DropDownArrow from "../../../assets/arrows/DropDownArrow.js";
 import { NavLink } from "react-router-dom";
 
 export class MenuItem extends Component {
+  handleLangChange(title) {
+    if (title === "English") {
+      this.props.handleLangChange("en");
+    } else if (title === "Mandarin") {
+      this.props.handleLangChange("ma");
+    }
+
+    this.props.closeFullMenu();
+  }
+
+  getFlag() {
+    if (this.props.lang === "en") {
+      return this.props.item.subItems[0].flag;
+    } else if (this.props.lang === "ma") {
+      return this.props.item.subItems[1].flag;
+    }
+  }
+
   render() {
     const isDropdown = this.props.item.isDropdown;
     const isExternal = this.props.item.isExternal;
@@ -12,7 +30,11 @@ export class MenuItem extends Component {
     return (
       <li className={this.props.className}>
         {isExternal ? (
-          <a href={this.props.item.path} className={this.props.item.cName}>
+          <a
+            href={this.props.item.path}
+            className={this.props.item.cName}
+            onClick={() => this.handleLangChange(this.props.item.title)}
+          >
             {this.props.item.flag}
             <span>{this.props.item.title}</span>
           </a>
@@ -28,7 +50,10 @@ export class MenuItem extends Component {
                 : this.props.closeFullMenu
             }
           >
-            {this.props.item.title}
+            {this.props.item.isLangPicker
+              ? this.getFlag()
+              : this.props.item.title}
+
             {isDropdown ? (
               <DropDownArrow
                 className={
@@ -55,6 +80,7 @@ export class MenuItem extends Component {
                   item={subItem}
                   key={index}
                   closeFullMenu={this.props.closeFullMenu}
+                  handleLangChange={this.props.handleLangChange}
                 />
               );
             })}
