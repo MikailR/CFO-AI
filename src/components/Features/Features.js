@@ -9,7 +9,7 @@ export class Features extends Component {
       <div className={this.props.className}>
         {this.props.features.map((feature, index) => (
           <div key={index}>
-            <Feature feature={feature} className="feature" />
+            <Feature feature={feature} className="feature" lang={this.props.lang} />
             {feature.isLast || <div className="feature-separator" />}
           </div>
         ))}

@@ -4,7 +4,6 @@ import "./Contact.css";
 import robotCFOContact from "../../assets/contact/robot-cfo-contact.png";
 
 import ContactForm from "../../components/Forms/ContactForm/ContactForm.js";
-import Footer from "../../components/Footer/Footer.js";
 
 export class Contact extends Component {
   render() {
@@ -25,8 +24,6 @@ export class Contact extends Component {
             </div>
           </div>
         </div>
-
-        <Footer />
       </React.Fragment>
     );
   }

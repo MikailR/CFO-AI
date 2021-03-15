@@ -15,11 +15,19 @@ export class Feature extends Component {
                   image={this.props.feature.image}
                   className="col-lg-auto"
                 />
-                <FeatureText text={this.props.feature.text} className="col-lg" />
+                <FeatureText
+                  text={this.props.feature.text}
+                  className="col-lg"
+                  lang={this.props.lang}
+                />
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <FeatureText text={this.props.feature.text} className="col-lg order-2 order-lg-1" />
+                <FeatureText
+                  text={this.props.feature.text}
+                  className="col-lg order-2 order-lg-1"
+                  lang={this.props.lang}
+                />
                 <FeatureImage
                   image={this.props.feature.image}
                   className="col-lg-auto order-1 order-lg-2"

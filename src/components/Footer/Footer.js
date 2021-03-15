@@ -5,10 +5,36 @@ import Modal from "../Modal/Modal.js";
 
 import Popup from "reactjs-popup";
 
-const Footer = ({ color }) => {
+const Footer = ({ color, lang }) => {
+  const header = () => {
+    if (lang === "en") {
+      return "The possibilities are endless!";
+    } else if (lang === "ma") {
+      return "无限的可能性!";
+    }
+  };
+
+  const text = () => {
+    if (lang === "en") {
+      return "Sign up today and watch your restaurant profit on autopilot";
+    } else if (lang === "ma") {
+      return "今天就注册吧，让您的餐厅在自动化中盈利。";
+    }
+  };
+
+  const register = () => {
+    if (lang === "en") {
+      return "Pre-Register Now";
+    } else if (lang === "ma") {
+      return "立即抢先注册";
+    }
+  };
+
   return (
     <React.Fragment>
-      <div style={{ position: "relative", zIndex: "-999", backgroundColor: color }}>
+      <div
+        style={{ position: "relative", zIndex: "-999", backgroundColor: color }}
+      >
         <svg
           style={{ backgroundColor: color }}
           id="footer-pattern"
@@ -25,12 +51,12 @@ const Footer = ({ color }) => {
       </div>
 
       <div className="footer flex-center-column">
-        <h1 className="footer-head">The possibilities are endless!</h1>
-        <p>Sign up today and watch your restaurant profit on autopilot</p>
+        <h1 className="footer-head">{header()}</h1>
+        <p>{text()}</p>
 
         <Popup
           modal
-          trigger={<a className="register-button">Pre-Register Now</a>}
+          trigger={<a className="register-button">{register()}</a>}
         >
           {(close) => <Modal close={close} />}
         </Popup>

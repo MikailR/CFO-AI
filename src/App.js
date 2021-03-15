@@ -12,6 +12,8 @@ import BankruptcyProtection from "./pages/BankruptcyProtection/BankruptcyProtect
 import WasteManagement from "./pages/WasteManagement/WasteManagement.js";
 import SAMOptimization from "./pages/SAMOptimization/SAMOptimization.js";
 
+import Footer from "./components/Footer/Footer.js";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop.js";
 
@@ -67,6 +69,7 @@ function App() {
           <Route path={path} render={(props) => <C {...props} lang={lang} />} />
         ))}
       </Switch>
+      <Footer lang={lang}/>
     </Router>
   );
 }
