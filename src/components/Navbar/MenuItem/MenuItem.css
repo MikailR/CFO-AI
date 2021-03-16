@@ -94,7 +94,8 @@ a svg {
 }
 
 /* TODO: Figure out why I put the media query in the first place */
-/* @media only screen and (min-width: 992px) { */
+/* It was to avoid premature highlighting in mobile */
+@media only screen and (min-width: 992px) {
   .navbar-menu-item:hover,
   .drop-down-menu-item:hover {
     color: #fff34b !important;
@@ -103,13 +104,29 @@ a svg {
   .navbar-menu-item:hover .drop-down-arrow {
     fill: #fff34b !important;
   }
-/* } */
+}
 
 @media only screen and (max-width: 992px) {
+
+  /* TODO: Experiment with right aligning the arrow */
+
+  /* .navbar-menu-item .drop-down-arrow {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .navbar-menu-item {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  } */
+
   .drop-down-menu {
     position: static;
 
     padding: 0;
+    margin: 0 15px;
     transform: none;
 
     background-color: transparent;
