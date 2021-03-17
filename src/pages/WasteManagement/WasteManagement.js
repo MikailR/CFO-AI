@@ -11,9 +11,9 @@ export class WasteManagement extends Component {
     return (
       <React.Fragment>
         <div className="cfo-ai">
-          <WMJumbo />
-          <WMQuoteCarousel />
-          <WMDetails />
+          <WMJumbo textGenerator={this.props.textGenerator} />
+          <WMQuoteCarousel textGenerator={this.props.textGenerator} />
+          <WMDetails textGenerator={this.props.textGenerator} />
           <DemoVideo />
         </div>
       </React.Fragment>

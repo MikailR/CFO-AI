@@ -23,11 +23,17 @@ export class WMQuoteCarousel extends Component {
 
     return (
       <div className="wm-quote-container">
-        <h1 className="header">BDO Canada Highlight</h1>
+        <h1 className="header">
+          {this.props.textGenerator(
+            "BDO 2019 Report Highlights",
+            "BDO 2019年报告要点"
+          )}
+        </h1>
         <div className="quote-content">
-          “We asked restaurant owners their top 3 goals from a randomized list
-          of reasons: 58% Improving the efficiency of operation, 51% Increasing
-          annual net sales, 48% staff productivity, 37% more menu items”
+          {this.props.textGenerator(
+            '"We asked restaurant owners their top 3 goals from a randomized list of reasons: 58% Improving the efficiency of operation, 51% Increasing annual net sales, 48% staff productivity, 37% more menu items"',
+            '"我们从随机列表中调研了餐厅老板的三大目标占比，回答：提高经营效率的占58%； 提高年净销售额的占51%；提高员工生产力的占 48%；增加更多菜品的占 37%。"'
+          )}
         </div>
       </div>
     );
