@@ -11,9 +11,9 @@ export class SAMOptimization extends Component {
     return (
       <React.Fragment>
         <div className="cfo-ai">
-          <SAMOJumbo />
-          <SAMOQuoteCarousel />
-          <SAMODetails />
+          <SAMOJumbo lang={this.props.lang} textGenerator={this.props.textGenerator} />
+          <SAMOQuoteCarousel lang={this.props.lang} textGenerator={this.props.textGenerator} />
+          <SAMODetails lang={this.props.lang} textGenerator={this.props.textGenerator} />
           <DemoVideo />
         </div>
       </React.Fragment>

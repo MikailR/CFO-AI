@@ -41,7 +41,7 @@ export class CFOAIJumbo extends Component {
 
               <div className="button-container">
                 <a href="https://demo.cfo-ai.com/" className="demo-link">
-                {this.textGenerator("Try Demo", "演示")}
+                  {this.textGenerator("Try Demo", "演示")}
                 </a>
                 <Popup
                   modal

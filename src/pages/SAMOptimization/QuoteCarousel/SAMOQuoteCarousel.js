@@ -25,10 +25,19 @@ export class SAMOQuoteCarousel extends Component {
 
     return (
       <div className="quote-container">
-        <h1 className="header">BDO Canada Highlights</h1>
+        <h1 className="header">
+          {this.props.textGenerator(
+            "BDO 2019 Report Highlights",
+            "BDO 2019年报告要点"
+          )}
+        </h1>
         <Slider {...sliderSettings} className="quote-slider">
           {SAMOQuoteContent.map((quote, index) => {
-            return <div key={index} className="quote-content">{quote.content}</div>;
+            return (
+              <div key={index} className="quote-content">
+                {quote[this.props.lang]}
+              </div>
+            );
           })}
         </Slider>
       </div>
