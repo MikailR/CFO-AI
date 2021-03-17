@@ -10,8 +10,11 @@ export class BankruptcyProtection extends Component {
     return (
       <React.Fragment>
         <div className="bankruptcy-protection">
-          <BPJumbo />
-          <BPDetails />
+          <BPJumbo textGenerator={this.props.textGenerator} />
+          <BPDetails
+            lang={this.props.lang}
+            textGenerator={this.props.textGenerator}
+          />
           <DemoVideo />
         </div>
       </React.Fragment>
