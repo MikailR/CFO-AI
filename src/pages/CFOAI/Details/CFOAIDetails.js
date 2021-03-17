@@ -7,31 +7,47 @@ import BulletPoint from "../../../components/BulletPoint/BulletPoint.js";
 
 import CFOAIDetailContent from "../../../assets/details/CFOAIDetailContent.js";
 
-const CFOAIDetails = () => {
+const textGenerator = (english, mandarin, lang) => {
+  if (lang === "en") {
+    return english;
+  } else if (lang === "ma") {
+    return mandarin;
+  }
+};
+
+const CFOAIDetails = ({ lang }) => {
   return (
     <div className="cfo-ai-details">
       <h2 className="header">
-        Here's how CFO AI helps you to profit and grow on autopilot
+        {textGenerator(
+          "Here's how CFO AI helps you to profit and grow on autopilot",
+          "以下是CFOai如何帮助你实现利润的自动增长",
+          lang
+        )}
       </h2>
 
       <p className="paragraph">
-        The 2019 BDO Report highlighted the positive impact on profitability
-        that multi-unit franchises enjoy by benchmarking across their network to
-        identify operational improvements for each franchise. Powered by our
-        global restaurant community, CFO AI provides this ‘profit boost through
-        benchmarking’ to all of its member restaurants.
+        {textGenerator(
+          "The 2019 BDO Report highlighted the positive impact on profitability that multi-unit franchises enjoy by benchmarking across their network to identify operational improvements for each franchise. Powered by our global restaurant community, CFO AI provides this ‘profit boost through benchmarking’ to all of its member restaurants.",
+          '2019年BDO的报告是通过网络对大型连锁餐饮进行基准测试，以确定每个餐厅运营的改进方案，能对盈利能力产生积极影响。在我们的全球餐厅网络的支持下，CFOai为其所有成员提供 "通过基准数据提升利润"的服务。',
+          lang
+        )}
       </p>
 
       <p className="paragraph">
-        For the first time, you will be able to learn why your performance
-        metrics are better or worse than other restaurants. You will be guided
-        on what steps to take to improve by the user-friendly and easy-to-follow
-        CFO AI.
+        {textGenerator(
+          "For the first time, you will be able to learn why your performance metrics are better or worse than other restaurants. You will be guided on what steps to take to improve by the user-friendly and easy-to-follow CFO AI.",
+          "您将能够了解您的餐厅比其他餐厅好或差的原因。您可通过界面简洁和流程简单的CFOai您建立一套改善方案。",
+          lang
+        )}
       </p>
 
       <p className="paragraph">
-        CFO AI dashboards provide recommendations and explain the impact on key
-        metrics such as:
+        {textGenerator(
+          "CFO AI dashboards provide recommendations and explain the impact on key metrics such as:",
+          "CFOai的板面提供建议以及解释关键指标对您经营的影响，例如：",
+          lang
+        )}
       </p>
 
       <div className="bullet-container">

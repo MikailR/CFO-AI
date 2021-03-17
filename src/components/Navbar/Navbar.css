@@ -80,23 +80,17 @@
     left: 0;
     z-index: -999;
 
+    transform: translateX(110%);
+
     background-color: #000950;
 
     padding: 85px 15px;
 
-    visibility: hidden;
-    opacity: 0;
-
-    transition: visibility 0.2s ease;
-    transition: opacity 0.2s ease;
+    transition: transform 0.2s ease;
   }
 
   .nav-menu.active {
-    visibility: visible;
-    opacity: 1;
-
-    transition: visibility 0.2s ease;
-    transition: opacity 0.2s ease;
+    transform: translateX(0);
   }
 
   .nav-menu .link-wrapper {

@@ -21,7 +21,7 @@
   margin: 0 10px;
   fill: #fff;
 
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .navbar-menu-item .drop-down-arrow.active {
@@ -71,8 +71,7 @@
 }
 
 a svg {
-  height: 20px;
-  width: 20px;
+  height: 25px;
 }
 
 .nav-link-active {
