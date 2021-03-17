@@ -13,9 +13,9 @@ export class CFOAI extends Component {
     return (
       <React.Fragment>
         <div className="cfo-ai">
-          <CFOAIJumbo lang={this.props.lang} />
-          <CFOAIQuoteCarousel lang={this.props.lang} />
-          <CFOAIDetails lang={this.props.lang} />
+          <CFOAIJumbo lang={this.props.lang} textGenerator={this.props.textGenerator} />
+          <CFOAIQuoteCarousel lang={this.props.lang} textGenerator={this.props.textGenerator} />
+          <CFOAIDetails lang={this.props.lang} textGenerator={this.props.textGenerator} />
           <DemoVideo />
         </div>
       </React.Fragment>

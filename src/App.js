@@ -57,16 +57,24 @@ function App() {
     });
   }
 
+  const textGenerator = (english, mandarin) => {
+    if (lang === "en") {
+      return english;
+    } else if (lang === "ma") {
+      return mandarin;
+    }
+  };
+
   return (
     <Router>
       <ScrollToTop />
-      <Navbar handleLangChange={handleLangChange} lang={lang} logo={logo}></Navbar>
+      <Navbar handleLangChange={handleLangChange} lang={lang} logo={logo} textGenerator={textGenerator} ></Navbar>
 
       <Switch>
         {/* TODO: Add routes to explore pages */}
 
         {routes.map(({ path, component: C }) => (
-          <Route path={path} render={(props) => <C {...props} lang={lang} />} />
+          <Route path={path} render={(props) => <C {...props} lang={lang} textGenerator={textGenerator} />} />
         ))}
       </Switch>
       <Footer lang={lang}/>

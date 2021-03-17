@@ -121,13 +121,17 @@ class Navbar extends Component {
               href="https://demo.cfo-ai.com/"
               className="navbar-menu-item demo-link-resp"
             >
-              Try Demo
+              {this.props.textGenerator("Try Demo", "演示")}
             </a>
 
             {/* For hamburger menu */}
             <Popup
               modal
-              trigger={<a className="register-button">Pre-Register</a>}
+              trigger={
+                <a className="register-button">
+                  {this.props.textGenerator("Pre-Register", "抢先注册")}
+                </a>
+              }
             >
               {(close) => <Modal close={close} />}
             </Popup>

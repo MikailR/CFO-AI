@@ -11,6 +11,10 @@ import Slider from "react-slick";
 import CFOAIQuoteContent from "../../../assets/quotes/CFOAIQuoteContent.js";
 
 export class CFOAIQuoteCarousel extends Component {
+  textGenerator(e, m) {
+    return this.props.textGenerator(e, m);
+  }
+
   render() {
     const sliderSettings = {
       dots: true,
@@ -25,13 +29,16 @@ export class CFOAIQuoteCarousel extends Component {
 
     return (
       <div className="quote-container">
-        <h1 className="header">BDO 2019 Report Highlights</h1>
+        <h1 className="header">
+          {this.props.textGenerator(
+            "BDO 2019 Report Highlights",
+            "BDO 2019年报告要点"
+          )}
+        </h1>
         <Slider {...sliderSettings} className="quote-slider">
-            {CFOAIQuoteContent.map((quote, index) => {
-                return (
-                    <div className="quote-content">{quote.content}</div>
-                )
-            })}
+          {CFOAIQuoteContent.map((quote, index) => {
+            return <div className="quote-content" key={index}>{quote[this.props.lang]}</div>;
+          })}
         </Slider>
       </div>
     );

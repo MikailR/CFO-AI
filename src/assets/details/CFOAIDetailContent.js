@@ -1,9 +1,11 @@
 const CFOAIDetailContent = [
   {
-    text: "Profit margin % per menu item",
+    en: "Profit margin % per menu item",
+    ma: "每项菜品的利润率%",
   },
   {
-    text: "Wastage $ per key ingredient",
+    en: "Wastage $ per key ingredient",
+    ma: "每种食材的损耗（美元）",
   },
   // {
   //   text:
