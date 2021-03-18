@@ -42,7 +42,7 @@ export class ContactForm extends Component {
             type="text"
             id="contact-name"
             name="contact-name"
-            placeholder={this.textGenerator("Full name", "您的名字")}
+            placeholder={this.textGenerator("Full name", "名字")}
             required
           />
 
@@ -51,7 +51,7 @@ export class ContactForm extends Component {
             type="text"
             id="contact-email"
             name="contact-email"
-            placeholder={this.textGenerator("What's your email?", "您的邮箱")}
+            placeholder={this.textGenerator("What's your email?", "联系邮箱")}
             required
           />
 

@@ -124,7 +124,7 @@ class Navbar extends Component {
               {this.props.textGenerator("Try Demo", "演示")}
             </a>
 
-            {/* For hamburger menu */}
+            {/* For hamburger menu on mobile */}
             <Popup
               modal
               trigger={
@@ -133,7 +133,7 @@ class Navbar extends Component {
                 </a>
               }
             >
-              {(close) => <Modal close={close} />}
+              {(close) => <Modal close={close} textGenerator={this.props.textGenerator} />}
             </Popup>
           </ul>
 

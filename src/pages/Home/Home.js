@@ -56,7 +56,7 @@ export class Home extends Component {
               {this.state.sliderContent[this.props.lang] &&
                 this.state.sliderContent[this.props.lang].map(
                   (slide, index) => {
-                    return <Slide {...slide} key={index} />;
+                    return <Slide {...slide} key={index} textGenerator={this.props.textGenerator} />;
                   }
                 )}
             </Slider>

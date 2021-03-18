@@ -48,7 +48,7 @@ export class WMJumbo extends Component {
                     </a>
                   }
                 >
-                  {(close) => <Modal close={close} />}
+                  {(close) => <Modal close={close} textGenerator={this.props.textGenerator} />}
                 </Popup>
               </div>
             </div>

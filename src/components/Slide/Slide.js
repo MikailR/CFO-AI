@@ -29,7 +29,7 @@ function Slide(props) {
             modal
             trigger={<a className="register-button">{props.text.button1}</a>}
           >
-            {(close) => <Modal close={close} />}
+            {(close) => <Modal close={close} textGenerator={props.textGenerator} />}
           </Popup>
         </div>
 

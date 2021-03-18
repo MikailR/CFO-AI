@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal.js";
 
 import Popup from "reactjs-popup";
 
-const Footer = ({ color, lang }) => {
+const Footer = ({ color, lang, textGenerator }) => {
   const header = () => {
     if (lang === "en") {
       return "The possibilities are endless!";
@@ -58,7 +58,7 @@ const Footer = ({ color, lang }) => {
           modal
           trigger={<a className="register-button">{register()}</a>}
         >
-          {(close) => <Modal close={close} />}
+          {(close) => <Modal close={close} textGenerator={textGenerator} />}
         </Popup>
       </div>
     </React.Fragment>

@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Modal.css";
 
 import LeadForm from "../Forms/LeadForm/LeadForm.js";
 
-function Modal({ close }) {
+function Modal({ close, textGenerator }) {
   return (
     <React.Fragment>
       <div className="mask" onClick={close} />
@@ -13,7 +13,7 @@ function Modal({ close }) {
           &times;
         </button>
 
-        <LeadForm />
+        <LeadForm textGenerator={textGenerator} />
       </div>
     </React.Fragment>
   );

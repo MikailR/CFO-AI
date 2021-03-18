@@ -77,7 +77,7 @@ function App() {
           <Route path={path} render={(props) => <C {...props} lang={lang} textGenerator={textGenerator} />} />
         ))}
       </Switch>
-      <Footer lang={lang}/>
+      <Footer lang={lang} textGenerator={textGenerator} />
     </Router>
   );
 }
