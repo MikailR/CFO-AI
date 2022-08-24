@@ -32,6 +32,7 @@ export class MenuItem extends Component {
         {isExternal ? (
           <a
             href={this.props.item.path}
+            target="_blank"
             className={this.props.item.cName}
             onClick={() => this.handleLangChange(this.props.item.id)}
           >

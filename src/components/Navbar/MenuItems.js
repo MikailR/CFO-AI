@@ -105,7 +105,7 @@ const MenuItems = [
       en: "Try Demo",
       ma: "演示",
     },
-    path: "https://demo.cfo-ai.com/",
+    path: "https://onboarding.cfo-ai.com/",
     cName: "navbar-menu-item demo-link",
     isDropdown: false,
     isExternal: true,

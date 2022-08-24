@@ -118,8 +118,9 @@ class Navbar extends Component {
 
             {/* For hamburger menu */}
             <a
-              href="https://demo.cfo-ai.com/"
+              href="https://onboarding.cfo-ai.com/"
               className="navbar-menu-item demo-link-resp"
+              target="_blank"
             >
               {this.props.textGenerator("Try Demo", "演示")}
             </a>

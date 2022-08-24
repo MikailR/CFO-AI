@@ -35,7 +35,7 @@ export class BPJumbo extends Component {
               </p>
 
               <div className="button-container">
-                <a href="https://demo.cfo-ai.com/" className="demo-link">
+                <a href="https://onboarding.cfo-ai.com/" className="demo-link" target="_blank">
                   {this.textGenerator("Try Demo", "演示")}
                 </a>
                 <Popup
